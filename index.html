@@ -75,15 +75,45 @@
     .btn-save { background:var(--navy); color:var(--white); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; margin-right:.5rem; }
     .btn-cancel { background:#ddd; color:var(--text); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; }
     .btn-save:hover { background:var(--gold); color:var(--navy); }
+    .galeri-section .gallery-grid { column-count: 3; column-gap: 1.2rem; max-width: 1200px; margin: 0 auto; padding: 0 2rem 3rem; }
+    .galeri-section .gallery-grid.column-2 { column-count: 2; }
+    .galeri-section .gallery-grid.column-1 { column-count: 1; }
+    .galeri-section .gallery-item { break-inside: avoid; margin-bottom: 1.2rem; }
+    .galeri-section .gallery-item img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(6,20,48,.15); display: block; transition: transform .3s; }
+    .galeri-section .gallery-item img:hover { transform: scale(1.04); }
     .btn-cancel:hover { background:#ccc; }
   </style>
 </head>
 <body>
   <div class="wrap"><div class="container"><div class="row justify-content-between"><div class="col-12 col-md d-flex align-items-center"><p class="mb-0 phone"><span class="mailus">WhatsApp:</span> <a href="https://wa.me/6285165935577">0851-6593-5577</a> &nbsp;|&nbsp; <span class="mailus">Instagram:</span> <a href="https://instagram.com/kojo_onigiri">@kojo_onigiri</a></p></div><div class="col-12 col-md d-flex justify-content-md-end"><p>Penawaran awal 2026 &nbsp;•&nbsp; Blokk 7, Rancaekek Kencana, Rancaekek, Bandung</p><div class="social-media"><a href="https://instagram.com/kojo_onigiri" target="_blank"><span class="fa fa-instagram"></span></a></div></div></div></div></div>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container"><a class="navbar-brand" href="index.html">Kojo<span>Onigiri</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span> Menu</button><div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto"><li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li><li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li><li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li><li class="nav-item"><a href="#operasional" class="nav-link">Jam</a></li><li class="nav-item"><a href="#lokasi" class="nav-link">Lokasi</a></li></ul></div></div></nav>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container"><a class="navbar-brand" href="index.html">Kojo<span>Onigiri</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span> Menu</button><div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto"><li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li><li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li><li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li><li class="nav-item"><a href="#operasional" class="nav-link">Jam</a></li><li class="nav-item"><a href="#lokasi" class="nav-link">Lokasi</a></li><li class="nav-item"><a href="#galeri" class="nav-link">Galeri</a></li></ul></div></div></nav>
   <section class="hero-wrap"><div class="slider-item js-fullheight" style="background-image:url('images/hero.jpg');"><div class="overlay"></div><div class="container"><div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"><div class="col-md-12 ftco-animate"><div class="text w-100 mt-5 text-center"><span class="subheading">Kojo Onigiri</span><h1>Makanan Enak, <span class="highlight">Khas Bandung</span><br><br>Menu Refleksi</h1><div class="brand-badges"><span class="badge"><span class="icon fa fa-whatsapp"></span> <a href="https://wa.me/6285165935577">0851-6593-5577</a></span><span class="badge"><span class="icon fa fa-instagram"></span> <a href="https://instagram.com/kojo_onigiri">@kojo_onigiri</a></span></div></div></div></div></div></div></section>
   <section class="ftco-section" id="tentang"><div class="container"><div class="intro"><div class="subtitle">Kojo Onigiri — Menu Khas</div><h2>Rekomendasi Sarapan Praktis di Bandung Timur</h2><p>Kojo Onigiri dikelola oleh PT Adsmosfer Kojo Mandiri.</p><p>Halal | MUI ID32110003040720423</p><p>⏳️ Since 2016, bisnis ini adalah bisnis kuliner berbahan nasi dengan produk onigiri dan onigirazu. Menggunakan bahan berkualitas dan halal. Tiap hari selalu makan nasi, tapi jika ingin merasakan pengalaman baru makan nasi, pasti Kojo Onigiri jawabannya.</p></div></div></section>
-    <section class="ftco-section" id="operasional">
+      <section class="ftco-section galeri-section" id="galeri">
+    <div class="container">
+      <div class="intro">
+        <div class="subtitle">Kojo Onigiri — Galeri</div>
+        <h2>Foto Kunjungan</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><a href="images/gallery/hero_og.jpg" target="_blank"><img src="images/gallery/hero_og.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_1.jpg" target="_blank"><img src="images/gallery/photo_1.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_2.jpg" target="_blank"><img src="images/gallery/photo_2.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_01.jpg" target="_blank"><img src="images/gallery/photo_640_01.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_02.jpg" target="_blank"><img src="images/gallery/photo_640_02.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_03.jpg" target="_blank"><img src="images/gallery/photo_640_03.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_04.jpg" target="_blank"><img src="images/gallery/photo_640_04.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_05.jpg" target="_blank"><img src="images/gallery/photo_640_05.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_06.jpg" target="_blank"><img src="images/gallery/photo_640_06.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_07.jpg" target="_blank"><img src="images/gallery/photo_640_07.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_08.jpg" target="_blank"><img src="images/gallery/photo_640_08.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_09.jpg" target="_blank"><img src="images/gallery/photo_640_09.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_10.jpg" target="_blank"><img src="images/gallery/photo_640_10.jpg" alt="Galeri Kojo Onigiri"></a></div>
+        <div class="gallery-item"><a href="images/gallery/photo_640_11.jpg" target="_blank"><img src="images/gallery/photo_640_11.jpg" alt="Galeri Kojo Onigiri"></a></div>
+      </div>
+    </div>
+  </section>
+<section class="ftco-section" id="operasional">
     <div class="container">
       <div class="intro">
         <div class="subtitle">Kojo Onigiri — Jam Operasional</div>
