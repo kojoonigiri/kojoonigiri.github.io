@@ -18,15 +18,15 @@ collections:
         label: Halaman Utama
         file: content/homepage.json
         fields:
-          - { name: siteTitle, label: Judul Website, widget: string, default: "Data Elevia" }
-          - { name: siteTagline, label: Tagline, widget: text, default: "Proyek Properti & Aset di Indonesia" }
+          - { name: siteTitle, label: Judul Website, widget: string, default: "Kojo Onigiri" }
+          - { name: siteTagline, label: Tagline, widget: text, default: "Makanan enak & khas Bandung oleh Kojo Onigiri" }
           - { name: heroImage, label: Gambar Hero, widget: image }
           - { name: contact, label: Kontak, widget: object, fields: [
               { name: whatsapp, label: WhatsApp, widget: string },
               { name: instagram, label: Instagram, widget: string }
             ]}
-          - { name: projects, label: Daftar Proyek, widget: list, hint: "Tambah proyek properti", fields: [
-              { name: name, label: Nama Proyek, widget: string },
+          - { name: projects, label: Daftar Menu, widget: list, hint: "Tambah menu makanan", fields: [
+              { name: name, label: Nama Menu, widget: string },
               { name: area, label: Area, widget: string },
               { name: status, label: Status, widget: string },
               { name: image, label: Gambar, widget: image }

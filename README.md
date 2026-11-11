@@ -1,6 +1,6 @@
-# Data Elevia — Landing Page
+# Kojo Onigiri — Landing Page
 
-Website promosi properti dengan admin panel (Decap CMS) untuk edit konten.
+Website promosi makanan (nasi goreng / onigiri) dengan admin panel (Decap CMS) untuk edit konten.
 
 ## Setup
 
