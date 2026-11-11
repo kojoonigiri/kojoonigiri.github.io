@@ -4,435 +4,97 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Elevia — Proyek Properti & Aset</title>
-  <script>
-    // ===== CMS CONTEXT DETECTOR =====
-    const IS_CMS_EDITING = window.location.pathname.includes('/admin/') || window.location.hostname.includes('github.io');
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <style>
-    :root {
-      --navy: #0a1f44;
-      --navy-dark: #061430;
-      --gold: #c8a24b;
-      --gold-light: #e0c878;
-      --bg: #faf7f0;
-      --white: #ffffff;
-      --text: #1a1a2e;
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--navy);
-      color: var(--white);
-      padding: 1.2rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 12px rgba(6, 20, 48, 0.3);
-    }
-
-    .logo {
-      font-size: 1.6rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-    .logo span { color: var(--gold); }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: var(--white);
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: color 0.3s;
-    }
-    .nav-links a:hover { color: var(--gold); }
-
-    .hero {
-      background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%);
-      color: var(--white);
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: clamp(1rem, 2vw, 1.3rem);
-      opacity: 0.9;
-      max-width: 700px;
-      margin: 0 auto 2rem;
-    }
-
-    .hero .badge {
-      display: inline-block;
-      background: var(--gold);
-      color: var(--navy-dark);
-      padding: 0.4rem 1.2rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-
-    .hero .contact-grid {
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-top: 2rem;
-    }
-    .hero .contact-grid .item {
-      background: rgba(255,255,255,0.1);
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-    }
-    .hero .contact-grid .item .label {
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      opacity: 0.7;
-    }
-    .hero .contact-grid .item .value {
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2rem;
-      color: var(--navy);
-      margin-bottom: 2.5rem;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    .project-card {
-      background: var(--white);
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 16px rgba(6, 20, 48, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-    }
-    .project-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(6, 20, 48, 0.15);
-    }
-
-    .card-img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      background: var(--navy);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold);
-      font-size: 0.85rem;
-      font-weight: 600;
-    }
-    .card-img .icon { font-size: 3rem; }
-
-    .card-body {
-      padding: 1.2rem;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .card-body h3 {
-      font-size: 1.2rem;
-      color: var(--navy);
-      margin-bottom: 0.3rem;
-    }
-    .card-body .area { font-size: 0.9rem; color: var(--text); }
-    .card-body .status {
-      font-size: 0.8rem;
-      color: var(--gold);
-      font-weight: 700;
-    }
-
-    .cms-ribbon {
-      display: none;
-      position: fixed;
-      bottom: 1.5rem;
-      right: 1.5rem;
-      background: var(--navy);
-      color: var(--white);
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      z-index: 200;
-      box-shadow: 0 4px 12px rgba(6, 20, 48, 0.4);
-    }
-    .cms-ribbon a {
-      color: var(--gold);
-      text-decoration: none;
-    }
-
-    .admin-bar {
-      position: fixed;
-      bottom: 1.5rem;
-      left: 1.5rem;
-      background: var(--gold);
-      color: var(--navy-dark);
-      padding: 0.8rem 1.2rem;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-decoration: none;
-      z-index: 200;
-      box-shadow: 0 4px 12px rgba(200, 162, 75, 0.4);
-      display: none;
-    }
-    .admin-bar.show { display: block; }
-
-    @media (max-width: 768px) {
-      .nav-links { display: none; }
-      .admin-bar { display: none; }
-    }
-
-    .cms-edit-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.6);
-      z-index: 300;
-      backdrop-filter: blur(4px);
-    }
-    .cms-edit-overlay.show { display: block; }
-    .cms-edit-modal {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: var(--white);
-      border-radius: 12px;
-      padding: 2rem;
-      max-width: 600px;
-      width: 90%;
-      z-index: 301;
-      box-shadow: 0 12px 40px rgba(0,0,0,0.3);
-    }
-    .cms-edit-modal h2 {
-      color: var(--navy);
-      font-size: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid var(--gold);
-      padding-bottom: 0.8rem;
-    }
-    .field-group {
-      margin-bottom: 1.2rem;
-    }
-    .field-group label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--navy);
-      margin-bottom: 0.4rem;
-    }
-    .field-group input, .field-group textarea {
-      width: 100%;
-      padding: 0.8rem;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-family: inherit;
-    }
-    .field-group textarea { resize: vertical; min-height: 100px; }
-    .field-hint {
-      font-size: 0.75rem;
-      color: var(--text);
-      opacity: 0.7;
-      margin-top: 0.3rem;
-    }
-    .btn-save {
-      background: var(--navy);
-      color: var(--white);
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-      margin-right: 0.5rem;
-    }
-    .btn-cancel {
-      background: #ddd;
-      color: var(--text);
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: 700;
-      cursor: pointer;
-    }
-    .btn-save:hover { background: var(--gold); color: var(--navy-dark); }
-    .btn-cancel:hover { background: #ccc; }
+    :root { --navy:#0a1f44; --navy-dark:#061430; --gold:#c8a24b; --gold-light:#e0c878; --bg:#faf7f0; --white:#fff; --text:#1a1a2e; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Roboto',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+    .wrap { background:var(--navy); color:var(--white); padding:1rem 0; text-align:center; }
+    .wrap p { margin:0; } .wrap .phone a { color:var(--gold); }
+    .social-media a { color:var(--white); margin:0 0.4rem; font-size:1.2rem; transition:color 0.3s; }
+    .social-media a:hover { color:var(--gold); }
+    #ftco-navbar { background:var(--navy) !important; box-shadow:0 2px 16px rgba(6,20,48,.3); }
+    #ftco-navbar .navbar-brand { font-family:'Dancing Script',cursive; color:var(--white) !important; font-size:2rem; }
+    #ftco-navbar .navbar-brand span { color:var(--gold); }
+    #ftco-navbar .navbar-nav .nav-link { color:var(--white) !important; font-size:1rem; margin-left:1.2rem; transition:color .3s; }
+    #ftco-navbar .navbar-nav .nav-link:hover, #ftco-navbar .navbar-nav .active .nav-link { color:var(--gold) !important; }
+    .hero-wrap { position:relative; min-height:90vh; display:flex; align-items:center; overflow:hidden; }
+    .hero-wrap .slider-item { position:absolute; inset:0; background-size:cover; background-position:center; }
+    .hero-wrap .overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(6,20,48,.85) 0%, rgba(10,31,68,.75) 100%); }
+    .hero-wrap .container { position:relative; z-index:2; padding:0 1.5rem; }
+    .hero-wrap .slider-text { color:var(--white); text-align:center; }
+    .hero-wrap .slider-text .subheading { font-size:1.8rem; color:var(--gold); font-weight:700; }
+    .hero-wrap .slider-text h1 { font-size:clamp(3rem,8vw,6rem); font-weight:900; margin:.5rem 0; letter-spacing:1px; }
+    .hero-wrap .slider-text h1 .highlight { color:var(--gold); }
+    .brand-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:1.5rem; }
+    .brand-badges .badge { background:rgba(255,255,255,.12); border:1px solid rgba(200,162,75,.4); padding:.6rem 1.4rem; border-radius:30px; font-size:.9rem; color:var(--white); display:flex; align-items:center; gap:.6rem; }
+    .brand-badges .badge .icon { font-size:1.6rem; }
+    .ftco-section { padding:5rem 0; }
+    .intro { text-align:center; max-width:900px; margin:0 auto; }
+    .intro .subtitle { font-size:1.2rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:2px; }
+    .intro h2 { font-size:clamp(2.2rem,4vw,3.5rem); color:var(--navy); margin:.5rem 0 1rem; }
+    .intro p { font-size:1.1rem; opacity:.9; max-width:700px; margin:0 auto; }
+    .projects-section { background:var(--white); }
+    .projects-section .section-title { font-size:clamp(1.8rem,3vw,2.5rem); color:var(--navy); text-align:center; margin-bottom:2rem; }
+    .projects-section .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:2rem; max-width:1200px; margin:0 auto; padding:0 2rem; }
+    .project-card { border-radius:12px; overflow:hidden; box-shadow:0 4px 16px rgba(6,20,48,.1); transition:transform .3s,box-shadow .3s; }
+    .project-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(6,20,48,.15); }
+    .project-card .card-img { width:100%; height:240px; object-fit:cover; background:var(--navy); display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:.85rem; font-weight:600; }
+    .project-card .card-img .icon { font-size:3rem; }
+    .project-card .card-body { padding:1.5rem; text-align:center; }
+    .project-card .card-body h3 { font-size:1.3rem; color:var(--navy); margin-bottom:.5rem; }
+    .project-card .card-body .area { font-size:.9rem; color:var(--text); }
+    .project-card .card-body .status { display:inline-block; background:var(--navy); color:var(--white); padding:.2rem 1rem; border-radius:20px; font-size:.8rem; font-weight:700; margin-top:.5rem; }
+    .contact-section { background:linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color:var(--white); }
+    .contact-section .contact-card { display:flex; gap:3rem; max-width:900px; margin:0 auto; padding:2rem; border-radius:12px; text-align:center; background:rgba(255,255,255,.06); border:1px solid rgba(200,162,75,.3); }
+    .contact-section .contact-card .label { font-size:.85rem; text-transform:uppercase; letter-spacing:1px; opacity:.7; }
+    .contact-section .contact-card .value { font-size:1.2rem; font-weight:700; }
+    .contact-section .contact-card .value a { color:var(--white); }
+    footer { background:var(--navy); color:var(--white); padding:3rem 2rem 1rem; text-align:center; }
+    footer p { font-size:.9rem; opacity:.8; }
+    footer .brand-font { font-family:'Dancing Script',cursive; font-size:2rem; color:var(--gold); }
+    footer .social-media { margin-top:1rem; }
+    footer .social-media a { color:var(--white); margin:0 .4rem; font-size:1.2rem; }
+    footer .social-media a:hover { color:var(--gold); }
+    @media (max-width:768px) { .hero-wrap { min-height:70vh; } }
+    .admin-bar { position:fixed; bottom:1.5rem; left:1.5rem; background:var(--gold); color:var(--navy-dark); padding:.7rem 1.1rem; border-radius:8px; font-size:.8rem; font-weight:700; text-decoration:none; z-index:200; box-shadow:0 4px 12px rgba(200,162,75,.4); display:none; }
+    .admin-bar a { color:var(--navy-dark); } .admin-bar.show { display:block; }
+    .cms-ribbon { display:none; position:fixed; bottom:1.5rem; right:1.5rem; background:var(--navy); color:var(--white); padding:.7rem 1.1rem; border-radius:8px; font-size:.8rem; z-index:200; box-shadow:0 4px 12px rgba(6,20,48,.4); }
+    .cms-ribbon a { color:var(--gold); }
+    .cms-edit-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:300; }
+    .cms-edit-overlay.show { display:block; }
+    .cms-edit-modal { position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:var(--white); border-radius:12px; padding:2rem; max-width:600px; width:90%; z-index:301; box-shadow:0 12px 40px rgba(0,0,0,.3); }
+    .cms-edit-modal h2 { color:var(--navy); font-size:1.5rem; margin-bottom:1.5rem; border-bottom:2px solid var(--gold); padding-bottom:.8rem; }
+    .field-group { margin-bottom:1.2rem; }
+    .field-group label { display:block; font-size:.85rem; font-weight:700; color:var(--navy); margin-bottom:.4rem; }
+    .field-group input, .field-group textarea { width:100%; padding:.7rem; border:1px solid #ddd; border-radius:6px; font-size:.95rem; font-family:inherit; }
+    .field-group textarea { resize:vertical; min-height:80px; }
+    .btn-save { background:var(--navy); color:var(--white); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; margin-right:.5rem; }
+    .btn-cancel { background:#ddd; color:var(--text); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; }
+    .btn-save:hover { background:var(--gold); color:var(--navy); }
+    .btn-cancel:hover { background:#ccc; }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">Data<span>Elevia</span></div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#proyek">Proyek</a></li>
-        <li><a href="#tentang">Tentang</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <h1>Data Elevia</h1>
-    <p>Proyek Properti &amp; Aset di Indonesia<br><span class="badge">Konversi &amp; Promosi</span></p>
-    <div class="contact-grid">
-      <div class="item">
-        <div class="label">WhatsApp</div>
-        <div class="value">0821 233 4550</div>
-      </div>
-      <div class="item">
-        <div class="label">Instagram</div>
-        <div class="value">@solusi.asetproperti</div>
-      </div>
-    </div>
-  </section>
-
-  <section id="proyek">
-    <h2 class="section-title">Proyek Properti</h2>
-    <div class="projects-grid" id="projects-grid">
-      <!-- Dynamic content will be injected here -->
-    </div>
-  </section>
-
-  <div class="admin-bar show" id="admin-bar">
-    <a href="/admin/" target="_blank">📝 Admin Panel</a>
-  </div>
-
-  <div class="cms-ribbon" id="cms-ribbon">
-    <a href="/admin/" target="_blank">✏️ Edit via CMS</a>
-  </div>
-
-  <div class="cms-edit-overlay" id="cms-edit-overlay">
-    <div class="cms-edit-modal">
-      <h2>✏️ Edit Konten Halaman Utama</h2>
-      <div class="field-group">
-        <label>Judul Website</label>
-        <input type="text" id="field-site-title" placeholder="Data Elevia">
-      </div>
-      <div class="field-group">
-        <label>Tagline</label>
-        <textarea id="field-site-tagline"></textarea>
-        <div class="field-hint">Subtitle di bagian hero</div>
-      </div>
-      <div class="field-group">
-        <h2>✏️ Edit Proyek (JSON)</h2>
-        <textarea id="field-projects-json" placeholder='[{ "name": "Proyek", "area": "...", "status": "..." }]'></textarea>
-        <div class="field-hint">Edit JSON proyek properti, atau kosongkan tombol simpan akan membaca dari salinan lokal fallback.</div>
-      </div>
-      <button class="btn-save" onclick="saveContent()">💾 Simpan &amp; Terapkan</button>
-      <button class="btn-cancel" onclick="closeEdit()">Batal</button>
-      <p style="margin-top:1rem;font-size:0.8rem;color:#888;">
-        🔄 Sandbox: tombol simpan simpan ke localStorage. Buka <kbd>/admin/</kbd> untuk edit permanen di GitHub.
-      </p>
-    </div>
-  </div>
-
-  <script>
-    const LOCAL_PROJECTS = [
-      { id: 1, name: "Ciparay Elok", area: "Jl. Ciparay, Bandung", status: "Tersedia" },
-      { id: 2, name: "Green Cileunyi Asri", area: "Jl. Green, Cileunyi", status: "Pengembangan" },
-      { id: 3, name: "Hegarmanah Jatinangor", area: "Jatinangor, Bandung", status: "Available" },
-      { id: 4, name: "Elevia Home", area: "Jl. Elevia, Kota", status: "New" },
-    ];
-
-    function saveContent() {
-      const siteTitle = document.getElementById('field-site-title').value || 'Data Elevia';
-      const siteTagline = document.getElementById('field-site-tagline').value || '';
-      const projectsJson = document.getElementById('field-projects-json').value;
-      const saved = {
-        siteTitle,
-        siteTagline,
-        projects: projectsJson ? JSON.parse(projectsJson) : LOCAL_PROJECTS
-      };
-      localStorage.setItem('data_elevia_content', JSON.stringify(saved));
-      alert('✅ Konten disimpan (sandbox). Buka /admin/ untuk edit permanen.');
-      loadContent();
-    }
-
-    function closeEdit() {
-      document.getElementById('cms-edit-overlay').classList.remove('show');
-      loadContent();
-    }
-
-    function loadContent() {
-      const saved = localStorage.getItem('data_elevia_content');
-      const data = saved ? JSON.parse(saved) : null;
-      const projects = data?.projects || LOCAL_PROJECTS;
-
-      document.getElementById('field-site-title').value = data?.siteTitle || 'Data Elevia';
-      document.getElementById('field-site-tagline').value = data?.siteTagline || 'Proyek Properti & Aset di Indonesia';
-
-      document.getElementById('projects-grid').innerHTML = projects.map(p => `
-        <div class="project-card">
-          <div class="card-img">
-            <span class="icon">📷</span>
-            <span>${p.name}</span>
-          </div>
-          <div class="card-body">
-            <h3>${p.name}</h3>
-            <div class="area">${p.area}</div>
-            <div class="status">${p.status}</div>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    loadContent();
-
-    if (window.location.hostname.includes('github.io')) {
-      document.getElementById('admin-bar').classList.add('show');
-      document.getElementById('cms-ribbon').style.display = 'block';
-    }
-
-    const editBtn = document.createElement('button');
-    editBtn.textContent = '✏️ Edit Konten';
-    editBtn.style.cssText = `
-      position: fixed; bottom: 70px; right: 20px; z-index: 250;
-      background: var(--navy); color: var(--white); border: none;
-      padding: 0.8rem 1.2rem; border-radius: 8px; cursor: pointer;
-      font-size: 0.9rem; box-shadow: 0 4px 12px rgba(6,20,48,.3);
-    `;
-    editBtn.onclick = () => document.getElementById('cms-edit-overlay').classList.add('show');
-    document.body.appendChild(editBtn);
-  </script>
+  <div class="wrap"><div class="container"><div class="row justify-content-between"><div class="col-12 col-md d-flex align-items-center"><p class="mb-0 phone"><span class="mailus">WhatsApp:</span> <a href="https://wa.me/628212334550">0821 233 4550</a> &nbsp;|&nbsp; <span class="mailus">Instagram:</span> <a href="https://instagram.com/solusi.asetproperti">@solusi.asetproperti</a></p></div><div class="col-12 col-md d-flex justify-content-md-end"><p>Penawaran awal 2026 &nbsp;•&nbsp; Jl. Arcamanik Mandalajati, Bandung</p><div class="social-media"><a href="https://instagram.com/solusi.asetproperti" target="_blank"><span class="fa fa-instagram"></span></a></div></div></div></div></div>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container"><a class="navbar-brand" href="index.html">Data<span>Elevia</span></a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span> Menu</button><div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto"><li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="#proyek" class="nav-link">Proyek</a></li><li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li><li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li></ul></div></div></nav>
+  <section class="hero-wrap"><div class="slider-item js-fullheight" style="background-image:url(images/bg_1.jpg);"><div class="overlay"></div><div class="container"><div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"><div class="col-md-12 ftco-animate"><div class="text w-100 mt-5 text-center"><span class="subheading">Data Elevia</span><h1>Rumah &amp; <span class="highlight">Aset</span> Properti <br>di Indonesia</h1><span class="subheading-2">Premium Property Projects</span><div class="brand-badges"><span class="badge"><span class="icon fa fa-whatsapp"></span> <a href="https://wa.me/628212334550">0821 233 4550</a></span><span class="badge"><span class="icon fa fa-instagram"></span> <a href="https://instagram.com/solusi.asetproperti">@solusi.asetproperti</a></span></div></div></div></div></div></section>
+  <section class="ftco-section" id="tentang"><div class="container"><div class="intro"><div class="subtitle">Data Elevia — Property Projects</div><h2>Proyek Properti &amp; Aset yang Siap Dijual / Dikembangkan</h2><p>Kami menyediakan lahan, rumah, dan aset properti di berbagai lokasi strategis di Indonesia.</p></div></div></section>
+  <section class="ftco-section projects-section" id="proyek"><div class="container"><h2 class="section-title">📋 Daftar Proyek</h2><div class="projects-grid" id="projects-grid"></div></div></section>
+  <section class="ftco-section contact-section" id="kontak"><div class="container"><div class="row no-gutters"><div class="col-lg-5 p-4 p-lg-5 d-flex align-items-center justify-content-center"><form action="#" class="appointment-form"><h3 class="mb-3" style="color:var(--gold);font-weight:700;">Hubungi Kami</h3><div class="row"><div class="col-md-12"><div class="form-group"><input type="text" class="form-control" placeholder="Nama"></div></div><div class="col-md-12"><div class="form-group"><input type="text" class="form-control" placeholder="WhatsApp / Email"></div></div><div class="col-md-12"><div class="form-group"><textarea class="form-control" placeholder="Pesan / Pertanyaan"></textarea></div></div><div class="col-md-12"><div class="form-group"><input type="submit" class="btn btn-primary btn-md btn-block" value="Kirim Pesan"></div></div></div></form></div><div class="col-lg-7 p-4 p-lg-5 d-flex align-items-center justify-content-center"><div class="contact-card"><div class="row"><div class="col-sm-6"><div class="mb-3"><span class="label">WhatsApp</span><br><span class="value"><a href="https://wa.me/628212334550">0821 233 4550</a></span></div></div><div class="col-sm-6"><div class="mb-3"><span class="label">Instagram</span><br><span class="value"><a href="https://instagram.com/solusi.asetproperti">@solusi.asetproperti</a></span></div></div><div class="col-sm-12"><div class="mb-3"><span class="label">Lokasi</span><br><span class="value" style="font-size:.95rem;opacity:.9;">Jl. Arcamanik Mandalajati, Bandung</span></div></div></div></div></div></div></section>
+  <footer><p>Data Elevia &copy; 2026. All rights reserved.</p><div class="social-media"><a href="https://instagram.com/solusi.asetproperti" target="_blank"><span class="fa fa-instagram"></span></a></div><p style="font-size:.75rem;opacity:.5;margin-top:1rem;">Private &amp; Confidential — Properti Copyright © Data Elevia</p></footer>
+  <div class="admin-bar show"><a href="/admin/" target="_blank">📝 Admin Panel</a></div><div class="cms-ribbon"><a href="/admin/" target="_blank">✏️ Edit via CMS</a></div>
+  <div class="cms-edit-overlay" id="cms-edit-overlay"><div class="cms-edit-modal"><h2>✏️ Edit Konten Halaman Utama</h2><div class="field-group"><label>Judul Website</label><input type="text" id="field-site-title" placeholder="Data Elevia"></div><div class="field-group"><label>Tagline / Subtitle</label><textarea id="field-site-tagline"></textarea></div><div class="field-group"><h2>✏️ Edit Proyek (JSON, 4-6 project)</h2><textarea id="field-projects-json" placeholder='[{ "name": "Nama Proyek", "area": "Lokasi", "status": "Tersedia" }]'></textarea><div class="field-hint">Edit JSON proyek, atau kosongkan tombol simpan akan gunakan fallback lokal.</div></div><button class="btn-save" onclick="saveContent()">💾 Simpan &amp; Terapkan</button><button class="btn-cancel" onclick="closeEdit()">Batal</button><p style="margin-top:1rem;font-size:.75rem;color:#888;">🔄 Sandbox: simpan ke localStorage. Buka <kbd>/admin/</kbd> untuk edit permanen di GitHub.</p></div></div>
+  <script>const LOCAL_PROJECTS=[{id:1,name:"Ciparay Elok",area:"Jl. Ciparay, Bandung",status:"Tersedia"},{id:2,name:"Green Cileunyi Asri",area:"Jl. Green, Cileunyi",status:"Pengembangan"},{id:3,name:"Hegarmanah Jatinangor",area:"Jatinangor, Bandung",status:"Available"},{id:4,name:"Elevia Home",area:"Jl. Elevia, Kota",status:"New"}];function saveContent(){const t=document.getElementById('field-site-title').value||'Data Elevia',g=document.getElementById('field-site-tagline').value||'',p=document.getElementById('field-projects-json').value;const s={siteTitle:t,siteTagline:g,projects:p?JSON.parse(p):LOCAL_PROJECTS};localStorage.setItem('data_elevia_content',JSON.stringify(s));alert('✅ Konten disimpan (sandbox). Buka /admin/ untuk edit permanen.');loadContent()}function closeEdit(){document.getElementById('cms-edit-overlay').classList.remove('show');loadContent()}function loadContent(){const s=localStorage.getItem('data_elevia_content')?JSON.parse(localStorage.getItem('data_elevia_content')):null;const pr=s?.projects||LOCAL_PROJECTS;document.getElementById('field-site-title').value=s?.siteTitle||'Data Elevia';document.getElementById('field-site-tagline').value=s?.siteTagline||'Proyek Properti & Aset di Indonesia';document.getElementById('projects-grid').innerHTML=pr.map(p=>`<div class="project-card"><div class="card-img"><span class="icon fa fa-image"></span><span>${p.name}</span></div><div class="card-body"><h3>${p.name}</h3><div class="area">${p.area}</div><div class="status">${p.status}</div></div></div>`).join('')};loadContent();if(window.location.hostname.includes('github.io')){document.querySelector('.admin-bar').classList.add('show');document.querySelector('.cms-ribbon').style.display='block'}const e=document.createElement('button');e.textContent='✏️ Edit Konten';e.style.cssText='position:fixed;bottom:60px;right:15px;z-index:250;background:var(--navy);color:var(--white);border:none;padding:.7rem 1rem;border-radius:8px;cursor:pointer;font-size:.9rem;box-shadow:0 4px 12px rgba(6,20,48,.3)';e.onclick=()=>document.getElementById('cms-edit-overlay').classList.add('show');document.body.appendChild(e)</script>
 </body>
 </html>
