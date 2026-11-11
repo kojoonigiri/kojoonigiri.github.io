@@ -1,0 +1,44 @@
+backend:
+  name: git-gateway
+  branch: main
+  squash_merges: true
+
+media_folder: /images
+public_folder: /images
+accept_formats:
+  - image/jpeg
+  - image/png
+  - image/webp
+
+collections:
+  - name: landing
+    label: Landing Page
+    files:
+      - name: homepage
+        label: Halaman Utama
+        file: content/homepage.json
+        fields:
+          - { name: siteTitle, label: Judul Website, widget: string, default: "Data Elevia" }
+          - { name: siteTagline, label: Tagline, widget: text, default: "Proyek Properti & Aset di Indonesia" }
+          - { name: heroImage, label: Gambar Hero, widget: image }
+          - { name: contact, label: Kontak, widget: object, fields: [
+              { name: whatsapp, label: WhatsApp, widget: string },
+              { name: instagram, label: Instagram, widget: string }
+            ]}
+          - { name: projects, label: Daftar Proyek, widget: list, hint: "Tambah proyek properti", fields: [
+              { name: name, label: Nama Proyek, widget: string },
+              { name: area, label: Area, widget: string },
+              { name: status, label: Status, widget: string },
+              { name: image, label: Gambar, widget: image }
+            ]}
+
+  - name: settings
+    label: Settings
+    files:
+      - name: config
+        label: Website Settings
+        file: content/settings.json
+        fields:
+          - { name: siteTitle, label: Title, widget: string }
+          - { name: contactWhatsapp, label: WhatsApp, widget: string }
+          - { name: contactInstagram, label: Instagram, widget: string }
