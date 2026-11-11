@@ -64,7 +64,7 @@
 .contact-section .intro h2 { color:var(--white); font-family:'Dancing Script', cursive; font-size:clamp(1.6rem,3vw,2.4rem); margin:.3rem 0 1rem; }
 .contact-section .intro p { color:rgba(255,255,255,.88); font-size:1rem; }
 
-.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; }
+.contact-grid { display:flex; flex-wrap:wrap; gap:32px; align-items:stretch; }
 .contact-form-panel {
   background:var(--white); border-radius:12px; padding:30px 26px;
   box-shadow:0 8px 24px rgba(6,20,48,.12); border:1px solid rgba(200,162,75,.35);
@@ -237,8 +237,8 @@
         <h2>Mari Terhubung</h2>
         <p>Kirim pesan melalui formulir di bawah, atau hubungi langsung via WhatsApp.</p>
       </div>
-      <div class="contact-grid">
-        <div class="col-lg-5 p-4 p-lg-5 d-flex align-items-center">
+      <div class="row no-gutters">
+        <div class="col-lg-5 p-4 p-lg-5 d-flex align-items-center justify-content-center">
           <div class="contact-form-panel">
             <span class="section-badge">Hubungi Kami</span>
             <form id="contact-form" action="#" method="POST">
@@ -261,7 +261,7 @@
             <div class="form-message" role="alert"></div>
           </div>
         </div>
-        <div class="col-lg-7 p-4 p-lg-5 d-flex align-items-center">
+        <div class="col-lg-7 p-4 p-lg-5 d-flex align-items-center justify-content-center">
           <div class="map-panel">
             <div id="map-custom"></div>
             <div class="contact-info-card">
