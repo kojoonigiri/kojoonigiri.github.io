@@ -1,45 +1,34 @@
-# Kojo Onigiri — Landing Page
+# Kojo Onigiri
 
-Website promosi makanan (nasi goreng / onigiri) dengan admin panel (Decap CMS) untuk edit konten.
+Halaman web resmi **Kojo Onigiri** — onigiri dan onigirazu yang praktis, nikmat, dan halal.
 
-## Setup
+## Proyek
+- **Judul:** Kojo Onigiri
+- **Brand:** Kojo Yummy Food
+- **Deskripsi:** Onigiri dan onigirazu untuk kehidupan sehari-hari.
 
-```bash
-# Clone repository
-git clone https://github.com/kojoonigiri/kojoonigiri.git
-cd kojoonigiri
-
-# Serve local (dev)
-python3 -m http.server 8000
-open http://localhost:8000
-
-# Admin panel
-open http://localhost:8000/admin/
+## Struktur Folder
+```
+/web/
+├── index.html            # Halaman Beranda
+├── About.html            # Halaman Tentang
+├── Contact.html          # Halaman Kontak
+├── css/
+│   └── style.css         # File CSS utama
+├── images/               # Folder gambar
+├── admin/
+│   └── config.yml        # Konfigurasi admin (Decap CMS)
+└── README.md
 ```
 
-## CMS Setup (GitHub Pages)
+## Cara Menjalankan Lokal
+1. Pastikan Anda memiliki server web lokal (misal: VS Code Live Server)
+2. Buka folder `/web` di browser
 
-1. Commit `admin/config.yml`, `index.html`, `content/`, `images/` ke repo
-2. Publish repo: Settings → Pages → Source: Deploy from a branch → `main` branch → `/ (root)`
-3. Admin panel: `https://kojoonigiri.github.io/admin/`
-4. Login: klik "Sign in with GitHub" (first time), or use the deploy button
+## Kontak
+- **WhatsApp:** 0821 233 4550
+- **Instagram:** @solusi.asetproperti
+- **Email:** solusi.asetproperti@gmail.com
 
-## Content Structure
-
-```
-content/
-  homepage.json    # Halaman utama (title, tagline, projects)
-  settings.json    # Settings umum
-images/            # Gambar proyek (upload via CMS)
-```
-
-## Local Dev with CMS
-
-```bash
-# Install Decap CMS
-npm install decap-cms
-
-# Start local server
-npx decap-cms serve
-# → http://localhost:8080/admin/
-```
+## Lisensi
+Proyek ini bebas digunakan dan dimodifikasi.

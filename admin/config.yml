@@ -1,44 +1,30 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
-  squash_merges: true
+  repo: kojoonigiri/web
+  base_url: https://kojoonigiri.github.io/web
 
-media_folder: /images
-public_folder: /images
-accept_formats:
-  - image/jpeg
-  - image/png
-  - image/webp
+media_folder: "images"
+public_folder: "/images"
+
+publish_mode: editorial
 
 collections:
-  - name: landing
-    label: Landing Page
+  - name: "pages"
+    label: "Pages"
     files:
-      - name: homepage
-        label: Halaman Utama
-        file: content/homepage.json
+      - file: "index.html"
+        label: "Home"
         fields:
-          - { name: siteTitle, label: Judul Website, widget: string, default: "Kojo Onigiri" }
-          - { name: siteTagline, label: Tagline, widget: text, default: "Makanan enak & khas Bandung oleh Kojo Onigiri" }
-          - { name: heroImage, label: Gambar Hero, widget: image }
-          - { name: contact, label: Kontak, widget: object, fields: [
-              { name: whatsapp, label: WhatsApp, widget: string },
-              { name: instagram, label: Instagram, widget: string }
-            ]}
-          - { name: projects, label: Daftar Menu, widget: list, hint: "Tambah menu makanan", fields: [
-              { name: name, label: Nama Menu, widget: string },
-              { name: area, label: Area, widget: string },
-              { name: status, label: Status, widget: string },
-              { name: image, label: Gambar, widget: image }
-            ]}
-
-  - name: settings
-    label: Settings
-    files:
-      - name: config
-        label: Website Settings
-        file: content/settings.json
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - file: "About.html"
+        label: "About"
         fields:
-          - { name: siteTitle, label: Title, widget: string }
-          - { name: contactWhatsapp, label: WhatsApp, widget: string }
-          - { name: contactInstagram, label: Instagram, widget: string }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+      - file: "Contact.html"
+        label: "Contact"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }

@@ -3,350 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makan Enak @kojoonigiri Bandung</title>
-  <meta name="description" content="Makanan enak dan khas Bandung oleh Kojo Onigiri">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="css/jquery.timepicker.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="keywords" content="Homemade Comfort Food, Plant Based Meals, Delicious Breakfast Ideas, Simple Cooking Tips, Global Cuisine Guide, Faq, Easy Lunch Recipes, Our Team, Local Market Finds, Onigiri, Kojo Onigiri">
+  <meta name="description" content="Kojo Onigiri - Praktis, Nikmat, dan Halal. Onigiri dan onigirazu untuk kehidupan sehari-hari Anda.">
+  <meta name="theme-color" content="#bf404c">
+  <meta property="og:title" content="Home | Kojo Onigiri">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kojoonigiri.github.io/web/">
+  <link rel="canonical" href="https://kojoonigiri.github.io/web/">
+  <meta name="referrer" content="origin">
+  <title>Home | Kojo Onigiri</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800">
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    :root { --navy:#C40012; --navy-dark:#8C000F; --gold:#c8a24b; --gold-light:#e0c878; --bg:#fdf7f6; --white:#fff; --text:#222; }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:'Roboto',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
-    .wrap { background:var(--navy); color:var(--white); padding:1rem 0; text-align:center; }
-    .wrap p { margin:0; } .wrap .phone a { color:var(--gold); }
-    .social-media a { color:var(--white); margin:0 0.4rem; font-size:1.2rem; transition:color 0.3s; }
-    .social-media a:hover { color:var(--gold); }
-    #ftco-navbar { background:var(--navy) !important; box-shadow:0 2px 16px rgba(6,20,48,.3); }
-    #ftco-navbar .navbar-brand { font-family:'Dancing Script',cursive; color:var(--white) !important; font-size:2rem; }
-    #ftco-navbar .navbar-brand span { color:var(--gold); }
-    #ftco-navbar .navbar-nav .nav-link { color:var(--white) !important; font-size:1rem; margin-left:1.2rem; transition:color .3s; }
-    #ftco-navbar .navbar-nav .nav-link:hover, #ftco-navbar .navbar-nav .active .nav-link { color:var(--gold) !important; }
-    .hero-wrap { position:relative; min-height:90vh; display:flex; align-items:center; overflow:hidden; }
-    .hero-wrap .slider-item { position:absolute; inset:0; background-size:cover; background-position:center; }
-    .hero-wrap .overlay { position:absolute; inset:0; background:linear-gradient(135deg, rgba(196,0,18,.88) 0%, rgba(140,0,15,.80) 100%); }
-    .hero-wrap .container { position:relative; z-index:2; padding:0 1.5rem; }
-    .hero-wrap .slider-text { color:var(--white); text-align:center; }
-    .hero-wrap .slider-text .subheading { font-size:1.8rem; color:var(--gold); font-weight:700; }
-    .hero-wrap .slider-text h1 { font-size:clamp(3rem,8vw,6rem); font-weight:900; margin:.5rem 0; letter-spacing:1px; }
-    .hero-wrap .slider-text h1 .highlight { color:var(--gold); }
-    .brand-badges { display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:1.5rem; }
-    .brand-badges .badge { background:rgba(255,255,255,.12); border:1px solid rgba(200,162,75,.4); padding:.6rem 1.4rem; border-radius:30px; font-size:.9rem; color:var(--white); display:flex; align-items:center; gap:.6rem; }
-    .brand-badges .badge .icon { font-size:1.6rem; }
-    .ftco-section { padding:5rem 0; }
-    .intro { text-align:center; max-width:900px; margin:0 auto; }
-    .intro .subtitle { font-size:1.2rem; color:var(--gold); font-weight:700; text-transform:uppercase; letter-spacing:2px; }
-    .intro h2 { font-size:clamp(2.2rem,4vw,3.5rem); color:var(--navy); margin:.5rem 0 1rem; }
-    .intro p { font-size:1.1rem; opacity:.9; max-width:700px; margin:0 auto; }
-    .projects-section { background:var(--white); }
-    .projects-section .section-title { font-size:clamp(1.8rem,3vw,2.5rem); color:var(--navy); text-align:center; margin-bottom:2rem; }
-    .projects-section .projects-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:2rem; max-width:1200px; margin:0 auto; padding:0 2rem; }
-    .project-card { border-radius:12px; overflow:hidden; box-shadow:0 4px 16px rgba(6,20,48,.1); transition:transform .3s,box-shadow .3s; }
-    .project-card:hover { transform:translateY(-4px); box-shadow:0 8px 24px rgba(6,20,48,.15); }
-    .project-card .card-img { width:100%; height:240px; object-fit:cover; background:var(--navy); display:flex; align-items:center; justify-content:center; color:var(--gold); font-size:.85rem; font-weight:600; }
-    .project-card .card-img .icon { font-size:3rem; }
-    .project-card .card-body { padding:1.5rem; text-align:center; }
-    .project-card .card-body h3 { font-size:1.3rem; color:var(--navy); margin-bottom:.5rem; }
-    .project-card .card-body .area { font-size:.9rem; color:var(--text); }
-    .project-card .card-body .status { display:inline-block; background:var(--navy); color:var(--white); padding:.2rem 1rem; border-radius:20px; font-size:.8rem; font-weight:700; margin-top:.5rem; }
-
-/* ---------- Kontak (codeshack) ---------- */
-.contact-section { background:linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 100%); color:var(--white); }
-.contact-section .intro { text-align:center; max-width:820px; margin:2rem auto 0; }
-.contact-section .intro .subtitle { color:var(--gold); font-family:'Dancing Script', cursive; text-transform:uppercase; letter-spacing:1px; }
-.contact-section .intro h2 { color:var(--white); font-family:'Dancing Script', cursive; font-size:clamp(1.6rem,3vw,2.4rem); margin:.3rem 0 1rem; }
-.contact-section .intro p { color:rgba(255,255,255,.88); font-size:1rem; }
-
-.contact-grid { display:flex; flex-wrap:wrap; gap:32px; align-items:stretch; }
-.contact-form-panel {
-  background:var(--white); border-radius:12px; padding:30px 26px;
-  box-shadow:0 8px 24px rgba(6,20,48,.12); border:1px solid rgba(200,162,75,.35);
-}
-.contact-form-panel .section-badge {
-  display:inline-block; background:var(--navy); color:var(--white); font-size:.76rem;
-  font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:5px 14px;
-  border-radius:999px; margin-bottom:14px;
-}
-.contact-form-panel h2 {
-  font-family:'Dancing Script', cursive; color:var(--navy-dark); font-size:1.8rem;
-  line-height:1.2; margin:.5rem 0 12px;
-}
-.contact-form-panel .subtitle { color:var(--text-light); font-size:.92rem; margin-bottom:22px; }
-
-.contact-form-panel .form-group { margin-bottom:15px; }
-.contact-form-panel .form-group label {
-  display:block; font-size:.82rem; font-weight:600; color:var(--navy); margin-bottom:6px; letter-spacing:.02em;
-}
-.contact-form-panel .form-group input,
-.contact-form-panel .form-group textarea {
-  width:100%; padding:11px 13px; font-family:'Roboto',sans-serif; font-size:.92rem; color:var(--text);
-  background:var(--bg); border:1px solid #E5E2DA; border-radius:8px;
-}
-.contact-form-panel .form-group textarea { resize:vertical; min-height:110px; }
-.contact-form-panel .form-group input:focus,
-.contact-form-panel .form-group textarea:focus {
-  outline:none; border-color:var(--gold); box-shadow:0 0 0 3px rgba(200,162,75,.22);
-}
-
-.contact-form-panel .submit-btn {
-  width:100%; padding:13px; background:var(--navy); color:var(--white); font-weight:700;
-  border:none; border-radius:8px; cursor:pointer; transition:background .2s, transform .1s;
-}
-.contact-form-panel .submit-btn:hover { background:var(--navy-dark); }
-.contact-form-panel .submit-btn:active { transform:scale(.98); }
-
-.form-message { display:none; margin-top:14px; padding:12px 14px; border-radius:8px; font-size:.9rem; font-weight:600; }
-.form-message.show { display:block; }
-.form-message.success { background:#E8F5E9; color:#2E7D32; border:1px solid #A5D6A7; }
-.form-message.error { background:#FFEBEE; color:#B71C1C; border:1px solid #E57373; }
-
-.map-panel {
-  border-radius:12px; overflow:hidden; border:1px solid rgba(200,162,75,.35);
-  box-shadow:0 8px 24px rgba(6,20,48,.12); height:420px; min-height:420px; background:var(--navy-dark); position:relative;
-}
-#map-custom { width:100%; height:100%; border-radius:12px; }
-
-.contact-info-card {
-  position:absolute; bottom:14px; left:14px; right:14px;
-  background:rgba(14,30,60,.92); backdrop-filter:blur(8px); border-radius:10px;
-  padding:14px 16px; box-shadow:0 8px 20px rgba(6,20,48,.18); border:1px solid rgba(200,162,75,.4); color:var(--white);
-}
-.contact-info-card .info-head {
-  display:flex; align-items:center; gap:10px; font-size:.8rem; font-weight:700;
-  letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:8px;
-}
-.contact-info-card .info-item {
-  display:flex; align-items:center; gap:10px; padding:7px 0; border-bottom:1px solid rgba(255,255,255,.12);
-}
-.contact-info-card .info-item:last-child { border-bottom:none; }
-.contact-info-card .info-item svg { flex-shrink:0; color:var(--gold); width:18px; height:18px; }
-.contact-info-card .info-item .label { color:var(--text-lighter); font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; }
-.contact-info-card .info-item .value { color:var(--white); font-weight:600; }
-.contact-info-card .info-item .value a { color:var(--white); text-decoration:underline; }
-    footer { background:var(--navy); color:var(--white); padding:3rem 2rem 1rem; text-align:center; }
-    footer p { font-size:.9rem; opacity:.8; }
-    footer .brand-font { font-family:'Dancing Script',cursive; font-size:2rem; color:var(--gold); }
-    footer .social-media { margin-top:1rem; }
-    footer .social-media a { color:var(--white); margin:0 .4rem; font-size:1.2rem; }
-    footer .social-media a:hover { color:var(--gold); }
-    @media (max-width:768px) { .hero-wrap { min-height:70vh; } }
-    .field-group { margin-bottom:1.2rem; }
-    .field-group label { display:block; font-size:.85rem; font-weight:700; color:var(--navy); margin-bottom:.4rem; }
-    .field-group input, .field-group textarea { width:100%; padding:.7rem; border:1px solid #ddd; border-radius:6px; font-size:.95rem; font-family:inherit; }
-    .field-group textarea { resize:vertical; min-height:80px; }
-    .btn-save { background:var(--navy); color:var(--white); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; margin-right:.5rem; }
-    .btn-cancel { background:#ddd; color:var(--text); border:none; padding:.7rem 1.3rem; border-radius:6px; font-size:.95rem; font-weight:700; cursor:pointer; }
-    .btn-save:hover { background:var(--gold); color:var(--navy); }
-    .galeri-section .gallery-grid { column-count: 3; column-gap: 1.2rem; max-width: 1200px; margin: 0 auto; padding: 0 2rem 3rem; }
-    .galeri-section .gallery-grid.column-2 { column-count: 2; }
-    .galeri-section .gallery-grid.column-1 { column-count: 1; }
-    .galeri-section .gallery-item { break-inside: avoid; margin-bottom: 1.2rem; }
-    .galeri-section .gallery-item img { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(6,20,48,.15); display: block; transition: transform .3s; }
-    .galeri-section .gallery-item img:hover { transform: scale(1.04); }
-    .btn-cancel:hover { background:#ccc; }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="icon" href="images/logo-favicon.png">
 </head>
 <body>
-  <div class="wrap"><div class="container"><div class="row justify-content-between"><div class="col-12 col-md d-flex align-items-center"><p class="mb-0 phone"><span class="mailus">WhatsApp:</span> <a href="https://wa.me/6285165935577">0851-6593-5577</a> &nbsp;|&nbsp; <span class="mailus">Instagram:</span> <a href="https://instagram.com/kojo_onigiri">@kojo_onigiri</a></p></div><div class="col-12 col-md d-flex justify-content-md-end"><p>Penawaran awal 2026 &nbsp;•&nbsp; Blokk 7, Rancaekek Kencana, Rancaekek, Bandung</p><div class="social-media"><a href="https://instagram.com/kojo_onigiri" target="_blank"><span class="fa fa-instagram"></span></a></div></div></div></div></div>
-  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"><div class="container"><a class="navbar-brand" href="index.html">Kojo<span>Onigiri</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation"><span class="oi oi-menu"></span> Menu</button><div class="collapse navbar-collapse" id="ftco-nav"><ul class="navbar-nav ml-auto"><li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li><li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li><li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li><li class="nav-item"><a href="#kontak" class="nav-link">Kontak</a></li><li class="nav-item"><a href="#operasional" class="nav-link">Jam</a></li><li class="nav-item"><a href="#galeri" class="nav-link">Galeri</a></li></ul></div></div></nav>
-  <section class="hero-wrap"><div class="slider-item js-fullheight" style="background-image:url('images/hero.jpg');"><div class="overlay"></div><div class="container"><div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center"><div class="col-md-12 ftco-animate"><div class="text w-100 mt-5 text-center"><span class="subheading">Kojo Onigiri</span><h1>Makanan Enak, <span class="highlight">Khas Bandung</span><br><br>Menu Refleksi</h1><div class="brand-badges"><span class="badge"><span class="icon fa fa-whatsapp"></span> <a href="https://wa.me/6285165935577">0851-6593-5577</a></span><span class="badge"><span class="icon fa fa-instagram"></span> <a href="https://instagram.com/kojo_onigiri">@kojo_onigiri</a></span></div></div></div></div></div></div></section>
-  <section class="ftco-section" id="tentang"><div class="container"><div class="intro"><div class="subtitle">Kojo Onigiri — Menu Khas</div><h2>Rekomendasi Sarapan Praktis di Bandung Timur</h2><p>Kojo Onigiri dikelola oleh PT Adsmosfer Kojo Mandiri.</p><p>Halal | MUI ID32110003040720423</p><p>⏳️ Since 2016, bisnis ini adalah bisnis kuliner berbahan nasi dengan produk onigiri dan onigirazu. Menggunakan bahan berkualitas dan halal. Tiap hari selalu makan nasi, tapi jika ingin merasakan pengalaman baru makan nasi, pasti Kojo Onigiri jawabannya.</p></div></div></section>
-      <section class="ftco-section galeri-section" id="galeri">
-    <div class="container">
-      <div class="intro">
-        <div class="subtitle">Kojo Onigiri — Galeri</div>
-        <h2>Foto Kunjungan</h2>
-      </div>
-      <div class="gallery-grid">
-        <div class="gallery-item"><a href="images/gallery/hero_og.jpg" target="_blank"><img src="images/gallery/hero_og.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_1.jpg" target="_blank"><img src="images/gallery/photo_1.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_2.jpg" target="_blank"><img src="images/gallery/photo_2.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_01.jpg" target="_blank"><img src="images/gallery/photo_640_01.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_02.jpg" target="_blank"><img src="images/gallery/photo_640_02.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_03.jpg" target="_blank"><img src="images/gallery/photo_640_03.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_04.jpg" target="_blank"><img src="images/gallery/photo_640_04.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_05.jpg" target="_blank"><img src="images/gallery/photo_640_05.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_06.jpg" target="_blank"><img src="images/gallery/photo_640_06.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_07.jpg" target="_blank"><img src="images/gallery/photo_640_07.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_08.jpg" target="_blank"><img src="images/gallery/photo_640_08.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_09.jpg" target="_blank"><img src="images/gallery/photo_640_09.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_10.jpg" target="_blank"><img src="images/gallery/photo_640_10.jpg" alt="Galeri Kojo Onigiri"></a></div>
-        <div class="gallery-item"><a href="images/gallery/photo_640_11.jpg" target="_blank"><img src="images/gallery/photo_640_11.jpg" alt="Galeri Kojo Onigiri"></a></div>
-      </div>
-    </div>
-  </section>
-<section class="ftco-section" id="operasional">
-    <div class="container">
-      <div class="intro">
-        <div class="subtitle">Kojo Onigiri — Jam Operasional</div>
-        <h2>Kami Buka Setiap Hari</h2>
-      </div>
-      <div class="contact-card">
-        <div class="row">
-          <div class="col-sm-4"><div class="mb-3"><span class="label">Hari Buka</span><br><span class="value" style="font-size:1.15rem;">Setiap Hari</span></div></div>
-          <div class="col-sm-4"><div class="mb-3"><span class="label">Jam Buka</span><br><span class="value" style="font-size:1.15rem;">17.00 WIB</span></div></div>
-          <div class="col-sm-4"><div class="mb-3"><span class="label">Jam Tutup</span><br><span class="value" style="font-size:1.15rem;">20.00 WIB</span></div></div>
-        </div>
-        <p style="font-size:.9rem;opacity:.8;margin-top:1rem;">Pemesanan PO (H-1) hanya melayani area Bandung Timur.</p>
-      </div>
-    </div>
-  </section>
-<section class="ftco-section projects-section" id="menu"><div class="container"><h2 class="section-title">Daftar Menu</h2><div class="projects-grid" id="menu-grid">
-        <div class="project-card">
-          <div class="card-img" style="background:var(--navy);"><span class="icon" style="font-size:2.6rem;color:var(--gold);">🍙</span></div>
-          <div class="card-body">
-            <h3>Onigiri</h3>
-            <p class="area">Nasi berbentuk bola dengan isian lezat, khas kuliner Jepangg.</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-img" style="background:var(--navy);"><span class="icon" style="font-size:2.6rem;color:var(--gold);">🍱</span></div>
-          <div class="card-body">
-            <h3>Onigirazu</h3>
-            <p class="area">Nasi gulung khas Jepang dengan isian, praktis dan enak.</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-img" style="background:var(--navy);"><span class="icon" style="font-size:2.6rem;color:var(--gold);">🌿</span></div>
-          <div class="card-body">
-            <h3>Rumput Laut Tabur</h3>
-            <p class="area">Taburan rumput laut segar sebagai pelengkap hidangan.</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="card-img" style="background:var(--navy);"><span class="icon" style="font-size:2.6rem;color:var(--gold);">🍚</span></div>
-          <div class="card-body">
-            <h3>Ricebowl</h3>
-            <p class="area">Nasi hangat dengan lauk di atasnya, praktis dan kenyang.</p>
-          </div>
-        </div>
-      </div></div></section>
-  <section class="ftco-section contact-section" id="kontak">
-    <div class="container">
-      <div class="intro">
-        <div class="subtitle">Kojo Onigiri — Kontak</div>
-        <h2>Mari Terhubung</h2>
-        <p>Kirim pesan melalui formulir di bawah, atau hubungi langsung via WhatsApp.</p>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-5 p-4 p-lg-5 d-flex align-items-center justify-content-center">
-          <div class="contact-form-panel">
-            <span class="section-badge">Hubungi Kami</span>
-            <form id="contact-form" action="#" method="POST">
-              <h2>Kirim Pesan</h2>
-              <p class="subtitle">Kami akan merespon pesan Anda dalam 1–2 hari kerja.</p>
-              <div class="form-group">
-                <label for="name">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama lengkap" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="nama@contoh.com" required>
-              </div>
-              <div class="form-group">
-                <label for="message">Pesan</label>
-                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda..." required></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Kirim Pesan</button>
-            </form>
-            <div class="form-message" role="alert"></div>
-          </div>
-        </div>
-        <div class="col-lg-7 p-4 p-lg-5 d-flex align-items-center justify-content-center">
-          <div class="map-panel">
-            <div id="map-custom"></div>
-            <div class="contact-info-card">
-              <div class="info-head"><span>Informasi Kontak</span></div>
-              <div class="info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <div><div class="label">WhatsApp</div><div class="value"><a href="https://wa.me/6285165935577">0851-6593-5577</a></div></div>
-              </div>
-              <div class="info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-                <div><div class="label">Instagram</div><div class="value"><a href="https://instagram.com/kojo_onigiri">@kojo_onigiri</a></div></div>
-              </div>
-              <div class="info-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                <div><div class="label">Lokasi</div><div class="value">Blokk 7, Rancaekek Kencana, Rancaekek, Bandung</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</footer>
 
-  <script>
-  (function() {
-    const form = document.getElementById('contact-form');
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const name = form.querySelector('input[name="name"]');
-        const email = form.querySelector('input[name="email"]');
-        const message = form.querySelector('textarea[name="message"]');
-        let valid = true;
-        [name, email, message].forEach(function(f) {
-          f.style.borderColor = '#E5E2DA';
-          if (!f.value.trim()) { f.style.borderColor = '#D32F2F'; valid = false; }
-        });
-        if (valid && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-          email.style.borderColor = '#D32F2F';
-          valid = false;
-        }
-        if (!valid) return;
-        const btn = form.querySelector('.submit-btn');
-        const msg = form.querySelector('.form-message');
-        btn.disabled = true;
-        btn.textContent = 'Mengirim...';
-        msg.className = 'form-message show error';
-        msg.textContent = 'Mengirim pesan... silakan tunggu sebentar.';
-        setTimeout(function() {
-          msg.className = 'form-message show success';
-          msg.textContent = 'Pesan terkirim! Kami akan menghubungi Anda segera.';
-          form.reset();
-          btn.disabled = false;
-          btn.textContent = 'Kirim Pesan';
-          setTimeout(function() { msg.style.display = 'none'; }, 6000);
-        }, 1200);
-      });
-    }
-    // Leaflet map init (wait for CDN)
-    function initMap() {
-      if (typeof L === 'undefined') { setTimeout(initMap, 250); return; }
-      const map = L.map('map-custom').setView([-6.9175, 107.6190], 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '© OpenStreetMap contributors'
-      }).addTo(map);
-      const storeIcon = L.icon({
-        iconUrl: 'https://placehold.co/50x50/1E3A5F/FFFFFF?text=KO',
-        iconSize: L.point(50, 50),
-        iconAnchor: L.point(25, 50),
-        popupAnchor: L.point(0, -50)
-      });
-      L.marker([-6.9175, 107.6190], { icon: storeIcon })
-        .addTo(map)
-        .bindPopup('<b>Kojo Onigiri</b><br>Selamat datang! Hubungi kami via WhatsApp.')
-        .openPopup();
-    }
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', initMap);
-    } else {
-      initMap();
-    }
-  })();
-  </script>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="images/logo-1.png" alt="Kojo Onigiri">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="/About.html">Tentang</a></li>
+          <li><a href="/Contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1>Sarapan Praktis, Nikmat, dan Halal</h1>
+      <p>Nikmati pengalaman baru menyantap nasi dalam bentuk onigiri dan onigirazu. Praktis dibawa, lezat dinikmati kapan saja.</p>
+      <form class="newsletter-form" action="https://service.nicepagesrv.com/form/v4/form-process" method="POST">
+        <input type="hidden" name="siteId" value="6685357">
+        <input type="hidden" name="pageId" value="729420107">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+        <div class="form-message">Thank you! Your message has been sent.</div>
+        <input type="hidden" name="recaptchaResponse">
+        <input type="hidden" name="siteKey" value="6LetPRgiAAAAAGX121nVdkYGTN-RfCXh4wAlbDFh">
+      </form>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Saatnya Coba Kojo Onigiri!</h2>
+        <p>Karena makan nasi setiap hari tidak harus dengan cara yang sama. Yuk, rasakan pengalaman baru menikmati nasi bersama Kojo Onigiri!</p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>1. Praktis untuk Segala Aktivitas</h3>
+          <p>Mudah dibawa dan dinikmati kapan saja. Cocok untuk sarapan, bekal kerja, perjalanan, maupun camilan di sela kesibukan.</p>
+        </div>
+        <div class="feature-item">
+          <h3>2. Pengalaman Baru Menikmati Nasi</h3>
+          <p>Hadir dengan pilihan onigiri dan onigirazu yang menawarkan cara berbeda menikmati makanan berbahan nasi dengan cita rasa yang menarik.</p>
+        </div>
+        <div class="feature-item">
+          <h3>3. Bahan Berkualitas dan Halal</h3>
+          <p>Dibuat menggunakan bahan-bahan berkualitas dan halal. Kojo Onigiri ber...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Kojo Onigiri. Kojo Yummy Food</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
