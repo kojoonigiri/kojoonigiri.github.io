@@ -39,14 +39,21 @@
     <div class="hero-container">
       <h1>Sarapan Praktis, Nikmat, dan Halal</h1>
       <p>Nikmati pengalaman baru menyantap nasi dalam bentuk onigiri dan onigirazu. Praktis dibawa, lezat dinikmati kapan saja.</p>
-      <form class="newsletter-form" action="https://formspree.io/ai" method="POST">
-        <div class="form-group">
-          <label for="phone">Nomor Telepon</label>
-          <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
-        </div>
-        <button type="submit" class="btn-submit">Kirim</button>
-        <div class="form-message">Terima kasih! Pesan Anda telah dikirim.</div>
-      </form>
+      <div class="card">
+        <p class="card-label">Hubungi Kami</p>
+        <form class="inline-form" action="https://formspree.io/f/meagqrkw" method="POST">
+          <span class="form-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-5 3L4 11"/></svg>
+          </span>
+          <input class="form-input" type="tel" name="phone" placeholder="Masukkan nomor telepon Anda" aria-label="Nomor Telepon" required>
+          <button class="form-btn" type="submit"><span>Kirim</span></button>
+        </form>
+        <p class="form-hint">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+          Hubungi kami via WhatsApp: <a href="https://wa.me/628212334550" target="_blank">0821 233 4550</a>
+        </p>
+      </div>
+      <p class="form-message">Terima kasih! Pesan Anda telah dikirim.</p>
     </div>
   </section>
 
