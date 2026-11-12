@@ -1,7 +1,7 @@
 /* ============================================================
    Kojo Onigiri — Main Styles
-   Theme: Coral Red (#bf404c) + Warm Colors
-   Hero Background: #800000 Red + hero-bg.jpg at 50% opacity
+   Typography: Montserrat (headings) + Lato (body/captions)
+   Hero: Red #800000 with 50% image opacity
    ============================================================ */
 
 :root {
@@ -16,7 +16,8 @@
   --gold: #c9a227;
   --navy: #0B1F3A;
   --radius: 8px;
-  --font-family: 'Roboto', 'Open Sans', sans-serif;
+  --font-heading: 'Montserrat', 'Roboto', sans-serif;
+  --font-body: 'Lato', 'Open Sans', sans-serif;
 }
 
 * {
@@ -26,7 +27,7 @@
 }
 
 body {
-  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.8;
   color: var(--text);
@@ -88,13 +89,14 @@ img {
   font-weight: 700;
   color: var(--primary);
   transition: color 0.3s;
+  font-family: var(--font-heading);
 }
 
 .header nav ul li a:hover {
   color: var(--gold);
 }
 
-/* ---------- Hero Section (Red #800000 + hero-bg.jpg at 50%) ---------- */
+/* ---------- Hero Section (Red #800000, 50% image opacity) ---------- */
 .hero-section {
   position: relative;
   background-color: #800000;
@@ -116,18 +118,53 @@ img {
   z-index: 2;
 }
 
+/* Heading 1 - Main Title (24px-32px Desktop) */
 .hero-section h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-family: var(--font-heading);
+  font-size: 32px;
   font-weight: 800;
   margin-bottom: 20px;
   letter-spacing: 2px;
+  line-height: 1.2;
 }
 
+/* Heading 2 - Sub-title (18px-24px) */
+.hero-section .subtitle {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+/* Heading 3 - Sub-sub-title (16px-20px) */
+.hero-section h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 20px 0 10px;
+}
+
+/* Body Text (14px-16px) */
 .hero-section p {
-  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
   opacity: 0.95;
   max-width: 700px;
   margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+/* Caption / Small Text (10px-12px) */
+.hero-section .caption {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 15px;
+  text-align: center;
 }
 
 /* Newsletter Form */
@@ -150,8 +187,8 @@ img {
   padding: 14px 16px;
   border: 2px solid var(--primary-light);
   border-radius: 6px;
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: var(--font-body);
+  font-size: 16px;
   color: var(--text);
   background: var(--white);
   transition: border-color 0.3s;
@@ -169,8 +206,8 @@ img {
   color: var(--primary);
   border: none;
   border-radius: 6px;
-  font-family: inherit;
-  font-size: 1rem;
+  font-family: var(--font-body);
+  font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   transition: background 0.3s, transform 0.1s;
@@ -185,6 +222,8 @@ img {
   margin-top: 10px;
   font-weight: 600;
   color: var(--gold);
+  font-family: var(--font-body);
+  font-size: 14px;
 }
 
 /* ---------- Features Section ---------- */
@@ -205,61 +244,53 @@ img {
   margin: 0 auto 40px;
 }
 
+/* Section Heading (Heading styles) */
 .section-header h2 {
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-family: var(--font-heading);
+  font-size: 28px;
   font-weight: 800;
   color: var(--primary);
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .section-header p {
-  font-size: 1.1rem;
+  font-family: var(--font-body);
+  font-size: 16px;
   color: var(--text-light);
   margin-bottom: 30px;
+  line-height: 1.7;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-}
-
-.feature-item {
-  background: var(--bg-light);
-  border: 1px solid rgba(201, 162, 39, 0.3);
-  border-radius: var(--radius);
-  padding: 24px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.feature-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(191, 64, 76, 0.15);
-}
-
+/* Feature items - Heading 3 */
 .feature-item h3 {
-  font-size: 1.1rem;
+  font-family: var(--font-heading);
+  font-size: 18px;
   font-weight: 700;
   color: var(--primary);
   margin-bottom: 10px;
 }
 
 .feature-item p {
+  font-family: var(--font-body);
+  font-size: 14px;
   color: var(--text-light);
   line-height: 1.7;
 }
 
-/* ---------- Footer ---------- */
+/* ---------- Footer (Darker color) ---------- */
 .footer {
-  background: var(--primary);
+  background: #2a0000;
   color: var(--white);
   text-align: center;
   padding: 30px 20px;
 }
 
 .footer p {
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 12px;
   opacity: 0.9;
+  letter-spacing: 1px;
 }
 
 /* ---------- Responsive ---------- */
@@ -273,7 +304,7 @@ img {
   }
   
   .hero-section h1 {
-    font-size: 1.6rem;
+    font-size: 28px;
   }
   
   .features-grid {
@@ -284,10 +315,10 @@ img {
 
 @media (max-width: 480px) {
   .hero-section h1 {
-    font-size: 1.3rem;
+    font-size: 24px;
   }
   
   .hero-section p {
-    font-size: 0.95rem;
+    font-size: 14px;
   }
 }
