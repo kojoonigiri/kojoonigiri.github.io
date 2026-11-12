@@ -39,17 +39,21 @@
     <div class="hero-container">
       <h1>Sarapan Praktis, Nikmat, dan Halal</h1>
       <p>Nikmati pengalaman baru menyantap nasi dalam bentuk onigiri dan onigirazu. Praktis dibawa, lezat dinikmati kapan saja.</p>
-      <form class="newsletter-form" action="https://service.nicepagesrv.com/form/v4/form-process" method="POST">
-        <input type="hidden" name="siteId" value="6685357">
-        <input type="hidden" name="pageId" value="729420107">
+      <form class="newsletter-form" action="mail.php" method="POST">
+        <div class="form-group">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+          <input type="email" id="email" name="email" placeholder="Your email" required>
         </div>
-        <button type="submit" class="btn-submit">Submit</button>
+        <div class="form-group">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message" required style="resize: vertical;"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
         <div class="form-message">Thank you! Your message has been sent.</div>
-        <input type="hidden" name="recaptchaResponse">
-        <input type="hidden" name="siteKey" value="6LetPRgiAAAAAGX121nVdkYGTN-RfCXh4wAlbDFh">
       </form>
     </div>
   </section>
