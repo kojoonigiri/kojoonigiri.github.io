@@ -272,6 +272,11 @@ img {
   color: var(--gold);
   font-family: var(--font-body);
   font-size: 14px;
+  display: none;
+}
+
+.form-message.show {
+  display: block;
 }
 
 /* ---------- Features Section ---------- */
