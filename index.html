@@ -39,21 +39,13 @@
     <div class="hero-container">
       <h1>Sarapan Praktis, Nikmat, dan Halal</h1>
       <p>Nikmati pengalaman baru menyantap nasi dalam bentuk onigiri dan onigirazu. Praktis dibawa, lezat dinikmati kapan saja.</p>
-      <form class="newsletter-form" action="mail.php" method="POST">
+      <form class="newsletter-form" action="https://formspree.io/ai" method="POST">
         <div class="form-group">
-          <label for="name">Nama</label>
-          <input type="text" id="name" name="name" placeholder="Your name" required>
+          <label for="phone">Nomor Telepon</label>
+          <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon Anda" required>
         </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Pesan</label>
-          <textarea id="message" name="message" rows="4" placeholder="Your message" required style="resize: vertical;"></textarea>
-        </div>
-        <button type="submit" class="btn-submit">Kirim Pesan</button>
-        <div class="form-message">Thank you! Your message has been sent.</div>
+        <button type="submit" class="btn-submit">Kirim</button>
+        <div class="form-message">Terima kasih! Pesan Anda telah dikirim.</div>
       </form>
     </div>
   </section>
