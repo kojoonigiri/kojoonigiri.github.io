@@ -97,7 +97,7 @@ img {
 /* ---------- Hero Section with Background Image ---------- */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, rgba(191, 64, 76, 0.85), rgba(138, 46, 52, 0.85));
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   color: var(--white);
   text-align: center;
   padding: 100px 20px;
