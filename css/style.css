@@ -103,11 +103,7 @@ img {
   color: var(--white);
   text-align: center;
   padding: 100px 20px;
-  background-image: url('../images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-blend-mode: multiply;
+  
 }
 
 .hero-container {
