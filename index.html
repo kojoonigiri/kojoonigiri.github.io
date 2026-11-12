@@ -554,40 +554,40 @@
         name: 'Onigirazu Chicken Katsu',
         category: 'onigirazu',
         price: 9000,
-        badge: 'Super Kenyang',
-        badgeColor: 'bg-purple-600',
+        badge: 'Harga 1 Pcs',
+        badgeColor: 'bg-orange-500',
         image: 'https://kojoonigiri.github.io/images/onigirazu1.jpg?auto=format&fit=crop&w=800&q=80',
-        desc: 'Sandwich nasi tebal dengan isian chicken katsu krispi ukuran penuh, kol iris segar, dan saus spesial.'
+        desc: 'Sandwich nasi tebal dengan isian chicken katsu krispi ukuran penuh, kol iris segar, dan saus spesial.  Harga 1 Pcs'
       },
       {
         id: 'tamago-tamago-beef',
         name: 'Onigirazu Tamago Crabstick',
         category: 'onigirazu',
         price: 9000,
-        badge: 'Favorit',
-        badgeColor: 'bg-indigo-600',
+        badge: 'Harga 1 Pcs',
+        badgeColor: 'bg-orange-500',
         image: 'https://kojoonigiri.github.io/images/onigirazu1.jpg?auto=format&fit=crop&w=800&q=80',
-        desc: 'Sandwich nasi ala Jepang berisi telur tamago lembut, irisan crabstick yang terasa khas.'
+        desc: 'Sandwich nasi ala Jepang berisi telur tamago lembut, irisan crabstick yang terasa khas. Harga 1 Pcs'
       },
       {
         id: 'tamago-tamago-beef',
         name: 'Onigirazu Tamago Beef',
         category: 'onigirazu',
         price: 9000,
-        badge: 'Favorit',
-        badgeColor: 'bg-indigo-600',
+        badge: 'Harga 1 Pcs',
+        badgeColor: 'bg-orange-500',
         image: 'https://kojoonigiri.github.io/images/onigirazu4.jpg?auto=format&fit=crop&w=800&q=80',
-        desc: 'Sandwich nasi ala Jepang berisi telur tamago lembut, irisan daging sapi asap premium, keju, dan selada segar.'
+        desc: 'Sandwich nasi ala Jepang berisi telur tamago lembut, irisan daging sapi asap premium, keju, dan selada segar. Harga 1 Pcs'
       },
       {
         id: 'sausage-mayo',
         name: 'Onigirazu Sausage Mayo',
         category: 'onigirazu',
         price: 9000,
-        badge: 'Favorit Anak',
+        badge: 'Harga 1 Pcs',
         badgeColor: 'bg-orange-500',
         image: 'https://kojoonigiri.github.io/images/onigirazu3.jpg?auto=format&fit=crop&w=800&q=80',
-        desc: 'Sosis sapi panggang juicy dengan telur dadar, selada renyah, dan saus mayones melimpah yang mengenyangkan.'
+        desc: 'Sosis sapi panggang juicy dengan telur dadar, selada renyah, dan saus mayones melimpah yang mengenyangkan. Harga 1 Pcs'
       }
     ];
 
@@ -844,7 +844,7 @@
       }
 
       let text = `Halo *Kojo Onigiri* (0851-6593-5577), saya mau pesan:\n\n`;
-      text += `📋 *DETAIL PESANAN:*\n`;
+      text += `*DETAIL PESANAN:*\n`;
 
       let grandTotal = 0;
       cart.forEach((item, index) => {
@@ -856,16 +856,16 @@
         }
       });
 
-      text += `\n💵 *TOTAL HARGA:* ${formatRp(grandTotal)}\n\n`;
-      text += `👤 *Nama Pemesan:* ${name}\n`;
-      text += `🚚 *Metode:* ${method === 'Delivery' ? 'Pengiriman (Delivery)' : 'Ambil Sendiri (Pickup)'}\n`;
+      text += `\n*TOTAL HARGA:* ${formatRp(grandTotal)}\n\n`;
+      text += `• *Nama Pemesan:* ${name}\n`;
+      text += `• *Metode:* ${method === 'Delivery' ? 'Pengiriman (Delivery)' : 'Ambil Sendiri (Pickup)'}\n`;
       
       if (method === 'Delivery') {
-        text += `📍 *Alamat Kirim:* ${address}\n`;
+        text += `• *Alamat Kirim:* ${address}\n`;
       }
       
       if (note) {
-        text += `📝 *Catatan:* ${note}\n`;
+        text += `• *Catatan:* ${note}\n`;
       }
 
       text += `\nMohon konfirmasi ketersediaan stok & rincian ongkir. Terima kasih!`;
