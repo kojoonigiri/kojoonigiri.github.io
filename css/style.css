@@ -1,7 +1,7 @@
 /* ============================================================
    Kojo Onigiri — Main Styles
    Theme: Coral Red (#bf404c) + Warm Colors
-   Hero Background: DSC_0188.JPG from PILIHAN folder
+   Hero Background: #800000 Red + hero-bg.jpg at 50% opacity
    ============================================================ */
 
 :root {
@@ -94,10 +94,10 @@ img {
   color: var(--gold);
 }
 
-/* ---------- Hero Section with Background Image ---------- */
+/* ---------- Hero Section (Red #800000 + hero-bg.jpg at 50%) ---------- */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-color: #800000;
   color: var(--white);
   text-align: center;
   padding: 100px 20px;
@@ -105,6 +105,8 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  opacity: 0.5;
 }
 
 .hero-container {
