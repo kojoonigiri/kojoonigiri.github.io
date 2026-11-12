@@ -11,22 +11,82 @@
   <meta property="og:url" content="https://kojoonigiri.github.io/">
   <link rel="canonical" href="https://kojoonigiri.github.io/">
   <meta name="referrer" content="origin">
-  <title>Kojo Onigiri</title>
-  <script>
-    // Redirect dari /web/ ke root domain
-    window.location.replace("https://kojoonigiri.github.io/");
-  </script>
-  <meta http-equiv="refresh" content="0; url=https://kojoonigiri.github.io/">
+  <title>Home | Kojo Onigiri</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 <body>
-  <!-- Redirecting... -->
-  <div style="display: flex; align-items: center; justify-content: center; height: 100vh; font-family: Arial, sans-serif; text-align: center;">
-    <p>Redirecting... <span id="counter"></span></p>
-  </div>
-  <script>
-    setTimeout(function() {
-      window.location.replace("https://kojoonigiri.github.io/");
-    }, 1000);
-  </script>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="/" class="logo">
+        <img src="images/logo-1.png" alt="Kojo Onigiri">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="/">Beranda</a></li>
+          <li><a href="/About.html">Tentang</a></li>
+          <li><a href="/Contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <h1>Sarapan Praktis, Nikmat, dan Halal</h1>
+      <p>Nikmati pengalaman baru menyantap nasi dalam bentuk onigiri dan onigirazu. Praktis dibawa, lezat dinikmati kapan saja.</p>
+      <form class="newsletter-form" action="https://service.nicepagesrv.com/form/v4/form-process" method="POST">
+        <input type="hidden" name="siteId" value="6685357">
+        <input type="hidden" name="pageId" value="729420107">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter a valid email address" required>
+        </div>
+        <button type="submit" class="btn-submit">Submit</button>
+        <div class="form-message">Thank you! Your message has been sent.</div>
+        <input type="hidden" name="recaptchaResponse">
+        <input type="hidden" name="siteKey" value="6LetPRgiAAAAAGX121nVdkYGTN-RfCXh4wAlbDFh">
+      </form>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Saatnya Coba Kojo Onigiri!</h2>
+        <p>Karena makan nasi setiap hari tidak harus dengan cara yang sama. Yuk, rasakan pengalaman baru menikmati nasi bersama Kojo Onigiri!</p>
+        <a href="#" class="btn-read-more">Read More</a>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <h3>1. Praktis untuk Segala Aktivitas</h3>
+          <p>Mudah dibawa dan dinikmati kapan saja. Cocok untuk sarapan, bekal kerja, perjalanan, maupun camilan di sela kesibukan.</p>
+        </div>
+        <div class="feature-item">
+          <h3>2. Pengalaman Baru Menikmati Nasi</h3>
+          <p>Hadir dengan pilihan onigiri dan onigirazu yang menawarkan cara berbeda menikmati makanan berbahan nasi dengan cita rasa yang menarik.</p>
+        </div>
+        <div class="feature-item">
+          <h3>3. Bahan Berkualitas dan Halal</h3>
+          <p>Dibuat menggunakan bahan-bahan berkualitas dan halal. Kojo Onigiri ber...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Kojo Onigiri. Kojo Yummy Food</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
