@@ -4,18 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cocokan Blog – Kojo Onigiri</title>
-  <!-- Decap CMS (v3) kit -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <link href="/blog/admin/config.yml" type="text/yaml" rel="cms-config-url" />
 </head>
 <body>
-  <!-- CMS selesai dimuat, panel akan muncul otomatis -->
-  <script>
-    if (window.NetlifyIdentity) {
-      window.NetlifyIdentity.on("init", () => {});
-      window.NetlifyIdentity.on("open", () => {});
-      window.NetlifyIdentity.on("close", () => {});
-    }
-  </script>
+  <div id="decap-notice" style="padding:24px;font-family:sans-serif;">
+    <p>Decap CMS di-load.</p>
+    <p>Jika panel tidak muncul, pastikan config.yml valid dan layanan autentikasi tersedia.</p>
+  </div>
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>

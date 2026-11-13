@@ -5,8 +5,9 @@ backend:
   name: github
   repo: kojoonigiri/kojoonigiri.github.io
   branch: main
-  base_url: https://api.github.com
-  auth_type: implicit # GitHub OAuth (implicit flow)
+  # api_root defaults to https://api.github.com
+  # base_url defaults to https://api.netlify.com
+  # Note: GitHub backend requires an auth server. Use Decap Turbo or custom proxy.
 
 # Folder where user-uploaded media (images) will be stored.
 media_folder: "/blog/assets/images"
