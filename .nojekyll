@@ -1,0 +1,2 @@
+# This file tells GitHub Pages to NOT run Jekyll on this repository.
+# This ensures that .md files and other assets are served as-is.
