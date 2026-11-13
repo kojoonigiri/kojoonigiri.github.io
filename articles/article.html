@@ -147,6 +147,16 @@
           }
           html += `<p>${processInline(line.substring(2))}</p>`;
         }
+        // Images
+        else if (line.startsWith('![')) {
+          const imgMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
+          if (imgMatch) {
+            flushParagraph();
+            const alt = imgMatch[1];
+            const src = imgMatch[2];
+            html += `<div class="my-4 text-center"><img src="${src}" alt="${alt}" class="max-w-full h-auto rounded-lg shadow-sm border border-gray-200"></div>`;
+          }
+        }
         // Blank line (end of paragraph)
         else if (line.trim() === '') {
           flushParagraph();

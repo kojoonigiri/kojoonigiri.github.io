@@ -6,6 +6,8 @@ category: "Lifestyle & Kuliner"
 
 # Gaya Hidup Food: 5 Tren Makanan yang Sedang Naik Daun
 
+![Gaya Hidup Food: 5 Tren Makanan yang Sedang Naik Daun](images/unsplash/01-clean-eating.jpg)
+
 > *Catatan untuk Editor CMS:* Artikel ini disusun dalam bahasa Indonesia formal, dengan gaya penulisan yang informatif dan relevan untuk audiens umum. Warna brand: merah (`#B30006`) + gold (`#C9A227`). Kontak: WhatsApp **0851-6593-5577**, Instagram **@kojo_onigiri**.
 
 ---
@@ -22,6 +24,8 @@ Bagi pembaca yang hidup di lingkungan perkotaan dan komunitas, tren gaya hidup f
 
 ### 1. Makanan Sehat dan "Clean Eating"
 
+![Clean Eating - Makanan Sehat](images/unsplash/01-clean-eating.jpg)
+
 *Clean eating* atau pola makan yang menekankan makanan utuh (whole foods) mulai populer di Indonesia. Konsep ini mengedepankan pemilihan makanan yang sedikit diproses, kaya nutrisi, dan bebas dari bahan berlebihan yang tidak diperlukan, seperti gula tambahan, pewaris, serta minyak dan garam berlebihan.
 
 **Ciri utama clean eating:**
@@ -34,6 +38,8 @@ Namun, tidak perlu dimaknai sebagai diet membatasi yang berlebihan. *Clean eatin
 ---
 
 ### 2. Plant-Based dan Protein Nabati
+
+![Plant-Based dan Protein Nabati](images/unsplash/02-plant-based.jpg)
 
 Selain menjadi perbincangan di kalangan vegan, *plant-based* kini semakin masuk ke lini konsumen umum. Banyak orang mulai menyadari bahwa porsi protein hewani yang terlalu besar dapat dikurangi dengan memanfaatkan kaya protein nabati, tanpa harus sepenuhnya menghilangkan daging.
 
@@ -48,6 +54,8 @@ Di Indonesia, peluangnya besar karena kaya protein nabati yang sudah ada dalam p
 
 ### 3. Functional Foods dan "Food as Medicine"
 
+![Functional Foods dan Food as Medicine](images/unsplash/03-functional.jpg)
+
 Banyak manfaat kesehatan yang dicari dari makanan, terutama di tengah meningkatnya kesadaran masyarakat terhadap pencegahan penyakit melalui gaya hidup. Konsep *functional foods* menekankan makanan yang tidak hanya menutrisi, tetapi juga memberikan manfaat tambahan bagi tubuh.
 
 **Contoh praktis:**
@@ -61,6 +69,8 @@ Konsep ini mendorong konsumen untuk mempertimbangkan makanan sebagai bagian dari
 
 ### 4. Slow Food dan Local Food
 
+![Slow Food dan Local Food](images/unsplash/04-slow-food.jpg)
+
 *Local food* atau makanan lokal semakin populer. Konsumen mulai lebih kritis terhadap:
 - Asal-usul bahan baku
 - Praktik pertanian yang berkelanjutan
@@ -71,6 +81,8 @@ Gerakan *Slow Food* mendorong konsumen untuk menikmati makanan secara saksama, m
 ---
 
 ### 5. Food Tech dan Smart Food Platform
+
+![Food Tech dan Smart Food Platform](images/unsplash/05-food-tech.jpg)
 
 Terdapat banyak aplikasi dan platform yang memudahkan akses makanan, baik dari sisi pembelian maupun pengelolaan pola makan.
 
@@ -102,3 +114,17 @@ Penting untuk dipahami bahwa tren-tren ini bukan tentang mengikuti tren semata, 
 - **Ukuran poster dunia:** 4:5 (1080×1350 px) untuk konten kelas properti
 - **Tip tampilan:** Gunakan kontras yang baik, gambar foto makanan yang bersih dan terang, jangan gunakan flash berlebihan.
 - **Lokasi penyimpanan:** `blog/articles/`
+
+---
+
+## Attribution
+
+Gambar-gambar pada artikel ini dikumpulkan dari Unsplash dalam lisensi Unsplash License (bebas digunakan, crediting opsional):
+
+- **01-clean-eating.jpg** — Photo by Unsplash
+- **02-plant-based.jpg** — Photo by Unsplash
+- **03-functional.jpg** — Photo by Unsplash
+- **04-slow-food.jpg** — Photo by Unsplash
+- **05-food-tech.jpg** — Photo by Unsplash
+
+> Lisensi Unsplash: https://unsplash.com/license
