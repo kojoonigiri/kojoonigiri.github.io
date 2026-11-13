@@ -75,8 +75,8 @@ Keterlibatan teknologi ini mengubah cara orang mengakses makanan dan bertransfor
 Gaya hidup food yang sedang naik daun saat ini adalah cerminan dari kebutuhan akan keseimbangan antara hiburan, kesehatan, dan kesadaran lingkungan. Makanan menjadi sarana untuk mengekspresikan nilai hidup, tidak hanya sebagai pelengkap dari kehidupan sehari-hari.
 
 > **Untuk informasi lebih lanjut atau permintaan penulisan konten terkait properti atau gaya hidup, hubungi:**  
-> 📞 WhatsApp: **0821 233 4550**  
-> 📸 Instagram: **@solusi.asetproperti**
+> 📞 WhatsApp: **0851-6593-5577**  
+> 📸 Instagram: **@kojo_onigiri**
 
 ---
 
