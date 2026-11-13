@@ -24,7 +24,7 @@ Bagi pembaca yang hidup di lingkungan perkotaan dan komunitas, tren gaya hidup f
 
 ### 1. Makanan Sehat dan "Clean Eating"
 
-![Clean Eating - Makanan Sehat](images/unsplash/01-clean-eating.jpg)
+![Clean Eating - Makanan Sehat](images/unsplash/section1_unique.jpg)
 
 *Clean eating* atau pola makan yang menekankan makanan utuh (whole foods) mulai populer di Indonesia. Konsep ini mengedepankan pemilihan makanan yang sedikit diproses, kaya nutrisi, dan bebas dari bahan berlebihan yang tidak diperlukan, seperti gula tambahan, pewaris, serta minyak dan garam berlebihan.
 
