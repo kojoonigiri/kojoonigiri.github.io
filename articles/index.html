@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Kojo Onigiri</title>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon-package/favicon.svg" />
+  <link rel="apple-touch-icon" href="/images/favicon-package/apple-touch-icon.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kojo: {
+              red: '#B30006',
+              gold: '#C9A227',
+              navy: '#0B1F3A',
+              dark: '#111827',
+              gray: '#4B5563',
+              light: '#FAFAFA'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .bg-seigaiha {
+      background-color: #fafafa;
+      background-image: radial-gradient(#e5e7eb 0.75px, transparent 0.75px), radial-gradient(#e5e7eb 0.75px, #fafafa 0.75px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #dc2626; border-radius: 4px; }
+  </style>
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+  <div class="bg-gradient-to-r from-red-700 via-kojo-red to-gold text-white text-xs md:text-sm font-medium py-2.5 px-4 text-center shadow-inner">
+    <div class="max-w-7xl mx-auto flex justify-center items-center gap-2 flex-wrap">
+      <span class="bg-white/20 text-white px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider">Lifestyle &amp; Kuliner</span>
+      <span>📍 Blog portfolio properti &middot; 📞 0821 233 4550 &middot; 📸 @solusi.asetproperti</span>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="/" class="flex items-center gap-2 text-xl font-bold text-kojo-navy">
+          <i class="fas fa-hamburger text-gold text-lg"></i>
+          <span>Kojo Onigiri</span>
+        </a>
+        <nav class="flex items-center gap-4 text-sm font-medium">
+          <a href="/articles/" class="hover:text-gold transition">Blog</a>
+          <a href="/" class="hover:text-kojo-red transition">Beranda</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="bg-white rounded-lg shadow-sm border border-gray-100 p-6">
+      <h1 class="text-2xl font-bold text-kojo-navy mb-2">Daftar Artikel</h1>
+      <p class="text-gray-600 mb-6">Ikuti perkembangan gaya hidup, kulinari, dan inspirasi properti.</p>
+      <div id="article-list" class="grid gap-4 md:grid-cols-2">
+        <p class="text-gray-500 text-center py-8">Belum ada artikel.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    fetch('articles.json')
+      .then(res => res.json())
+      .then(data => {
+        const container = document.getElementById('article-list');
+        const articles = data.articles || [];
+        if (!articles.length) {
+          container.innerHTML = '<p class="text-gray-500 text-center py-8">Belum ada artikel.</p>';
+          return;
+        }
+        container.innerHTML = '<div class="space-y-4">';
+        articles.forEach(a => {
+          container.innerHTML += `
+            <a href="article.html?slug=${a.slug}" class="block p-4 border border-gray-200 rounded-lg hover:border-kojo-red hover:shadow-md transition">
+              <h2 class="text-lg font-bold text-kojo-navy">${a.title}</h2>
+              <p class="text-sm text-gray-600 mt-1">${a.date} &middot; ${a.category}</p>
+            </a>
+          `;
+        });
+        container.innerHTML += '</div>';
+      })
+      .catch(err => {
+        container.innerHTML = '<p class="text-red-500 text-center py-8">Gagal memuat daftar artikel.</p>';
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* ============================================
+   Kojo Onigiri – Blog Colors
+   ============================================
+   - Merah: #B30006
+   - Navy:   #0B1F3A
+   - Gold:   #C9A227
+   - Background: #FAFAFA
+   - Text: #2D2D2D
+   ============================================ */
+
+:root {
+  --kojo-red: #B30006;
+  --kojo-navy: #0B1F3A;
+  --kojo-gold: #C9A227;
+  --kojo-bg: #FAFAFA;
+  --kojo-text: #2D2D2D;
+}
+
+/* Brand color helpers */
+.kojo-red { color: var(--kojo-red); }
+.kojo-red-bg { background-color: var(--kojo-red); }
+.border-kojo-red { border-color: var(--kojo-red); }
+
+.kojo-navy { color: var(--kojo-navy); }
+.kojo-navy-bg { background-color: var(--kojo-navy); }
+
+.kojo-gold { color: var(--kojo-gold); }
+.kojo-gold-bg { background-color: var(--kojo-gold); }
+
+/* Blog list item style */
+.article-card {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.article-card:hover {
+  border-color: var(--kojo-red);
+  box-shadow: 0 4px 12px rgba(179, 0, 6, 0.15);
+}
+
+/* Article content style */
+.prose-kojo {
+  color: var(--kojo-text);
+}
+
+.prose-kojo h1 {
+  color: var(--kojo-navy);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.prose-kojo h2 {
+  color: var(--kojo-navy);
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.prose-kojo p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.prose-kojo a {
+  color: var(--kojo-red);
+  text-decoration: underline;
+}
+
+.prose-kojo blockquote {
+  border-left: 4px solid var(--kojo-gold);
+  background: #fafafa;
+  padding: 0.75rem 1rem;
+  border-radius: 0 4px 4px 0;
+  color: #555;
+}
+
+.prose-kojo code {
+  background: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+/* Article list item */
+.article-list-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.article-list-item:hover {
+  border-color: var(--kojo-red);
+  box-shadow: 0 4px 12px rgba(179, 0, 6, 0.15);
+}
+
+/* Make the article list columns in index.html work with grid */
+.grid-cols-2 > .article-card {
+  height: 100%;
+}
