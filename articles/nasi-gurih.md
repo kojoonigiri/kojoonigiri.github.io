@@ -6,7 +6,7 @@ category: "Lifestyle & Kuliner"
 
 # Nasi Gurih: Kari Tradisional Sunda dengan Gurihnya Sedaap
 
-![Nasi Gurih: Kari Tradisional Sunda dengan Gurihnya Sedaap](images/unsplash/novasih-nasi-gurih-1.jpg)
+![Nasi Gurih: Kari Tradisional Sunda dengan Gurihnya Sedaap](images/unsplash/novasih-nasi-gurih-hero.jpg)
 
 > *Catatan Editor CMS:* Artikel ini disusun dalam bahasa Indonesia formal, dengan gaya penulisan yang informatif dan relevan untuk audiens umum. Warna brand: merah (#B30006) + gold (#C9A227). Kontak: WhatsApp **0851-6593-5577**, Instagram **@kojo_onigiri**.
 
