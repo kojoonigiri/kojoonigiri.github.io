@@ -1,6 +1,6 @@
 ---
 title: "Kuliner sebagai Identitas Budaya: Warisan Rasa yang Hidup"
-date: 2026-11-14
+date: 2026-11-15
 category: "Lifestyle & Kuliner"
 ---
 

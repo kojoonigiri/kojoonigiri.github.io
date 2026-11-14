@@ -1,6 +1,6 @@
 ---
 title: "Nasi Uduk: Rasa Khas Indonesia yang Tak Ternilai"
-date: 2026-11-14
+date: 2026-11-15
 category: "Lifestyle & Kuliner"
 ---
 
