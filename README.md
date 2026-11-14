@@ -25,4 +25,4 @@ Halaman web resmi **Kojo Onigiri** — onigiri dan onigirazu yang praktis, nikma
 - **Email:** kojo.onigiri@gmail.com
 
 ## Lisensi
-Proyek ini semula digenerate oleh Gemini AI dan bebas digunakan dan dimodifikasi.
+Proyek ini menggunakan lisensi MIT.
