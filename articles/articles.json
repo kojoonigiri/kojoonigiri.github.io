@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "slug": "food-tech",
+      "title": "Food Tech: Teknologi yang Mengubah Akses Makanan",
+      "date": "2026-11-14",
+      "category": "Lifestyle & Kuliner"
+    },
+    {
+      "slug": "functional-foods",
+      "title": "Functional Foods: Makanan yang Bikin Lebih Sehat",
+      "date": "2026-11-14",
+      "category": "Lifestyle & Kuliner"
+    },
+    {
+      "slug": "healthy",
+      "title": "Makanan Sehat: 5 Tren yang Bikin Hidup Lebih Seimbang",
+      "date": "2026-11-14",
+      "category": "Lifestyle & Kuliner"
+    },
+    {
+      "slug": "local-food",
+      "title": "Local Food: Makanan Lokal yang Kaya Warisan Budaya",
+      "date": "2026-11-14",
+      "category": "Lifestyle & Kuliner"
+    },
+    {
+      "slug": "plant-based",
+      "title": "Plant-Based: Gaya Hidup Makan Kaya Protein Nabati",
+      "date": "2026-11-14",
+      "category": "Lifestyle & Kuliner"
+    },
+    {
       "slug": "food-lifestyle-trend",
       "title": "Gaya Hidup Food: 5 Tren Makanan yang Sedang Naik daun",
       "date": "2026-11-13",
