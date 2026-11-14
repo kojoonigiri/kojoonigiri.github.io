@@ -6,7 +6,7 @@ category: "Lifestyle & Kuliner"
 
 # Kuliner sebagai Identitas Budaya: Warisan Rasa yang Hidup
 
-![Kuliner sebagai Identitas Budaya: Warisan Rasa yang Hidup](../images/unsplash/novasih-kuliner-budaya-hero.jpg)
+![Kuliner sebagai Identitas Budaya: Warisan Rasa yang Hidup](images/unsplash/novasih-kuliner-budaya-hero.jpg)
 
 > *Catatan Editor CMS:* Artikel ini disusun dalam bahasa Indonesia formal, dengan gaya penulisan yang informatif dan relevan untuk audiens umum. Warna brand: merah (#B30006) + gold (#C9A227). Kontak: WhatsApp **0851-6593-5577**, Instagram **@kojo_onigiri**.
 

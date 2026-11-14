@@ -6,7 +6,7 @@ category: "Lifestyle & Kuliner"
 
 # Nasi Uduk: Rasa Khas Indonesia yang Tak Ternilai
 
-![Nasi Uduk: Rasa Khas Indonesia yang Tak Ternilai](../images/unsplash/novasih-nasi-uduk-hero.jpg)
+![Nasi Uduk: Rasa Khas Indonesia yang Tak Ternilai](images/unsplash/novasih-nasi-uduk-hero.jpg)
 
 > *Catatan Editor CMS:* Artikel ini disusun dalam bahasa Indonesia formal, dengan gaya penulisan yang informatif dan relevan untuk audiens umum. Warna brand: merah (#B30006) + gold (#C9A227). Kontak: WhatsApp **0851-6593-5577**, Instagram **@kojo_onigiri**.
 

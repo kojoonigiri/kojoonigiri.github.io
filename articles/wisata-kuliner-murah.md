@@ -6,7 +6,7 @@ category: "Lifestyle & Kuliner"
 
 # Wisata Kuliner Murah: Menyelami Ruang Ketiga bagi Pekerja Urban
 
-![Wisata Kuliner Murah: Menyelami Ruang Ketiga bagi Pekerja Urban](../images/unsplash/novasih-wisata-kuliner-murah-hero.jpg)
+![Wisata Kuliner Murah: Menyelami Ruang Ketiga bagi Pekerja Urban](images/unsplash/novasih-wisata-kuliner-murah-hero.jpg)
 
 > *Catatan Editor CMS:* Artikel ini disusun dalam bahasa Indonesia formal, dengan gaya penulisan yang informatif dan relevan untuk audiens umum. Warna brand: merah (#B30006) + gold (#C9A227). Kontak: WhatsApp **0851-6593-5577**, Instagram **@kojo_onigiri**.
 
