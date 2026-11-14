@@ -18,25 +18,17 @@ category: "Lifestyle & Kuliner"
 
 Nasi uduk bukan sekadar piring penutup, melainkan jembatan rasa yang melekat erat dalam budaya kekayaan Indonesia. Wujud manisnya yang khas dari bahan dasarnya—kelapa, konsentrat, dan bumbu rempah yang harum—menjelma dalam setiap secaranya.
 
-![Section 1](images/unsplash/novasih-nasi-uduk-1.jpg)
-
 ### 2. Di setiap daerah, rasanya sedikit berbeda
 
 Di setiap daerah, rasanya sedikit berbeda. Di Betawi, sensitif dengan adunan kelapa dan kecap; di Jawa, lebih sederhana dengan penumbu kering; di Sunda, diperkaya dengan lauk yang gurih. Batagor, ayam goreng, timun, klipi, dan krupuk memperkaya sensasi setiap gigitan.
-
-![Section 2](images/unsplash/novasih-nasi-uduk-2.jpg)
 
 ### 3. Bukan hanya sarapan, nasi uduk pernah menjadi jendela keberagaman
 
 Bukan hanya sarapan, nasi uduk pernah menjadi jendela keberagaman. Saat ini hampir 25 menu olahan nasi menjadi bukti bahwa nasi bukan sekadar makanan pokok, melainkan kanvas bagi kreativitas kuliner.
 
-![Section 3](images/unsplash/novasih-nasi-uduk-3.jpg)
-
 ### 4. Kesimpulan: Nasi uduk mengajarkan bahwa makanan sederhana tetap bisa memiliki makna yang dalam—mereka adalah pengingat akan kekayaan budaya dan ketahanan rasa bangsa
 
 Kesimpulan: Nasi uduk mengajarkan bahwa makanan sederhana tetap bisa memiliki makna yang dalam—mereka adalah pengingat akan kekayaan budaya dan ketahanan rasa bangsa.
-
-![Section 4](images/unsplash/novasih-nasi-uduk-4.jpg)
 
 ---
 

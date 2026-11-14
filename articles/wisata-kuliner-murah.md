@@ -18,25 +18,17 @@ category: "Lifestyle & Kuliner"
 
 Bagi pekerja urban yang sibuk, ruang ketiga—selain rumah dan kantor—menjadi tempat relaksasi yang berharga. Wisata kuliner murah hadir sebagai kunci: menghabiskan waktu dengan teman atau keluarga tanpa menguras kantong.
 
-![Section 1](images/unsplash/novasih-wisata-kuliner-murah-1.jpg)
-
 ### 2. Kata khazanah kuliner rakyat menawarkan berbagai pilihan
 
 Kata khazanah kuliner rakyat menawarkan berbagai pilihan. Dari kopi khas kota, nasi beras kunyit, hingga jajanan pasar yang menyegarkan, setiap sudut menunjukkan kehangatan dan inovasi. Tidak perlu mega-resort; cukup jalan kaki mengelilingi pasar tradisional.
-
-![Section 2](images/unsplash/novasih-wisata-kuliner-murah-2.jpg)
 
 ### 3. Layanan ini tidak hanya menyenangkan, tetapi juga menghubungkan orang dengan lingkungan dan budaya setempat
 
 Layanan ini tidak hanya menyenangkan, tetapi juga menghubungkan orang dengan lingkungan dan budaya setempat. Ruang ketiga yang ramah, tanpa pagar, tanpa persyaratan, hanya rasa yang akrab.
 
-![Section 3](images/unsplash/novasih-wisata-kuliner-murah-3.jpg)
-
 ### 4. Kesimpulan: Wisata kuliner murah adalah jalan sederhana menuju kebahagiaan sehari-hari tanpa mengabaikan koneksi dengan budaya
 
 Kesimpulan: Wisata kuliner murah adalah jalan sederhana menuju kebahagiaan sehari-hari tanpa mengabaikan koneksi dengan budaya.
-
-![Section 4](images/unsplash/novasih-wisata-kuliner-murah-4.jpg)
 
 ---
 
