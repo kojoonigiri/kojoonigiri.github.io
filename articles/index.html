@@ -73,21 +73,36 @@
       <div id="article-list" class="grid gap-4 md:grid-cols-2">
         <p class="text-gray-500 text-center py-8">Belum ada artikel.</p>
       </div>
+      <div class="mt-6 flex flex-col items-center justify-between gap-3" id="pagination"></div>
     </div>
   </main>
 
   <script>
+    // Pagination config: 10 articles per page
+    const ARTICLES_PER_PAGE = 10;
+    const urlParams = new URLSearchParams(window.location.search);
+    const page = parseInt(urlParams.get('page')) || 1;
+    const container = document.getElementById('article-list');
+
     fetch('articles.json')
       .then(res => res.json())
       .then(data => {
-        const container = document.getElementById('article-list');
         const articles = data.articles || [];
         if (!articles.length) {
           container.innerHTML = '<p class="text-gray-500 text-center py-8">Belum ada artikel.</p>';
+          document.getElementById('pagination').innerHTML = '';
           return;
         }
+
+        // Calculate pagination range
+        const totalPages = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+        const start = (page - 1) * ARTICLES_PER_PAGE;
+        const end = Math.min(start + ARTICLES_PER_PAGE, articles.length);
+        const pageArticles = articles.slice(start, end);
+
+        // Render current page articles
         container.innerHTML = '<div class="space-y-4">';
-        articles.forEach(a => {
+        pageArticles.forEach(a => {
           container.innerHTML += `
             <a href="article.html?slug=${a.slug}" class="block p-4 border border-gray-200 rounded-lg hover:border-kojo-red hover:shadow-md transition">
               <h2 class="text-lg font-bold text-kojo-navy">${a.title}</h2>
@@ -96,9 +111,29 @@
           `;
         });
         container.innerHTML += '</div>';
+
+        // Render pagination controls
+        const pagingContainer = document.getElementById('pagination');
+        const prevPage = page > 1 ? `<a href="?page=${page - 1}" class="px-4 py-2 text-sm font-medium text-white bg-kojo-red rounded-l-lg hover:bg-red-700">Sebelumnya</a>` : '';
+        const nextPage = page < totalPages ? `<a href="?page=${page + 1}" class="px-4 py-2 text-sm font-medium text-white bg-kojo-red rounded-r-lg hover:bg-red-700">Berikutnya</a>` : '';
+
+        let pageNumbers = '';
+        for (let i = 1; i <= totalPages; i++) {
+          pageNumbers += `<a href="?page=${i}" class="px-3 py-2 text-sm font-medium ${i === page ? 'bg-kojo-navy text-white' : 'text-gray-600 hover:bg-gray-200'} rounded">${i}</a>`;
+        }
+
+        pagingContainer.innerHTML = `
+          <div class="flex items-center gap-2">
+            ${prevPage}
+            <span class="px-2 py-2 text-sm text-gray-600">Halaman <strong>${page}</strong> dari <strong>${totalPages}</strong></span>
+            ${nextPage}
+          </div>
+          <div class="flex justify-center gap-1 mt-2">${pageNumbers}</div>
+        `;
       })
       .catch(err => {
         container.innerHTML = '<p class="text-red-500 text-center py-8">Gagal memuat daftar artikel.</p>';
+        document.getElementById('pagination').innerHTML = '';
       });
   </script>
 </body>
