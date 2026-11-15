@@ -1,9 +1,9 @@
 > ## Content Index
-> Fetch the complete content index at: https://kojoonigiri.github.io/blog/llms.txt
+> Fetch the complete content index at: http://localhost:2368/llms.txt
 > Use this file to discover other available public pages before exploring further.
 
 # Coming soon
-- URL: https://kojoonigiri.github.io/blog/coming-soon/
+- URL: http://localhost:2368/coming-soon/
 - Published: 2026-11-14T23:51:14.000Z
 - Updated: 2026-11-14T23:58:33.000Z
 - Author: Kojo Onigiri
