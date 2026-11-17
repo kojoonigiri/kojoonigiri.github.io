@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <title>Food Tech: Teknologi yang Mengubah Akses Makanan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="style" href="../assets/built/screen.css%3Fv=xPGozQS2SFMZDlmQ.css">
+    <link rel="preload" as="script" href="../assets/built/source.js%3Fv=33sa4-qy5thAFPQH">
+    
+    <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/inter-roman.woff2%3Fv=OecsB5TBLy27FKD2" crossorigin="anonymous">
+<style>
+    @font-face {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: optional;
+        src: url(../assets/fonts/inter-roman.woff2%3Fv=OecsB5TBLy27FKD2) format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+</style>
+
+    <link rel="stylesheet" type="text/css" href="../assets/built/screen.css%3Fv=xPGozQS2SFMZDlmQ.css">
+
+    <style>
+        :root {
+            --background-color: #ffffff
+        }
+    </style>
+
+    <script>
+        /* The script for calculating the color contrast has been taken from
+        https://gomakethings.com/dynamically-changing-the-text-color-based-on-background-color-contrast-with-vanilla-js/ */
+        var accentColor = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+        accentColor = accentColor.trim().slice(1);
+
+        if (accentColor.length === 3) {
+            accentColor = accentColor[0] + accentColor[0] + accentColor[1] + accentColor[1] + accentColor[2] + accentColor[2];
+        }
+
+        var r = parseInt(accentColor.substr(0, 2), 16);
+        var g = parseInt(accentColor.substr(2, 2), 16);
+        var b = parseInt(accentColor.substr(4, 2), 16);
+        var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+        var textColor = (yiq >= 128) ? 'dark' : 'light';
+
+        document.documentElement.className = `has-${textColor}-text`;
+    </script>
+
+    <link rel="icon" href="../content/images/size/w256h256/2026/11/logo-500x500.png" type="image/png">
+    <link rel="canonical" href="index.html">
+    <link rel="alternate" type="text/markdown" href="../food-tech.md">
+    <meta name="robots" content="max-image-preview:large">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Kuliner Lifestyle: Tren Terbaru &amp; Cara Menikmati Gaya Hidup">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Food Tech: Teknologi yang Mengubah Akses Makanan">
+    <meta property="og:description" content="Food tech mengubah cara akses makanan melalui teknologi. Dari marketplace hingga subscription, akses makanan semakin mudah. Food tech mengubah cara akses makanan melalui teknologi. Dalam penerapannya, hal ini meliputi aplikasi pesan-makanan, platform subscription makanan sehat, toko bahan makanan online terstruktur. Food tech memudahkan akses makanan setiap hari.
+
+Gaya hidup">
+    <meta property="og:url" content="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/food-tech/">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1200&amp;q&#x3D;80">
+    <meta property="article:published_time" content="2026-11-16T04:08:19.000Z">
+    <meta property="article:modified_time" content="2026-11-16T04:58:05.000Z">
+    <meta property="article:tag" content="Kuliner Lifestyle">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/kojo.onigiri">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Food Tech: Teknologi yang Mengubah Akses Makanan">
+    <meta name="twitter:description" content="Food tech mengubah cara akses makanan melalui teknologi. Dari marketplace hingga subscription, akses makanan semakin mudah. Food tech mengubah cara akses makanan melalui teknologi. Dalam penerapannya, hal ini meliputi aplikasi pesan-makanan, platform subscription makanan sehat, toko bahan makanan online terstruktur. Food tech memudahkan akses makanan setiap hari.
+
+Gaya hidup">
+    <meta name="twitter:url" content="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/food-tech/">
+    <meta name="twitter:image" content="https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto&#x3D;format&amp;fit&#x3D;crop&amp;w&#x3D;1200&amp;q&#x3D;80">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Kojo Onigiri">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Kuliner Lifestyle">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Kuliner Lifestyle: Tren Terbaru & Cara Menikmati Gaya Hidup",
+        "url": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/content/images/2026/11/logo-500x500-1.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Kojo Onigiri",
+        "image": {
+            "@type": "ImageObject",
+            "url": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/content/images/2026/11/logo-500x500-2.png",
+            "width": 500,
+            "height": 500
+        },
+        "url": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/author/kojo/",
+        "sameAs": []
+    },
+    "headline": "Food Tech: Teknologi yang Mengubah Akses Makanan",
+    "url": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/food-tech/",
+    "datePublished": "2026-11-16T04:08:19.000Z",
+    "dateModified": "2026-11-16T04:58:05.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80",
+        "width": 1200,
+        "height": 1800
+    },
+    "keywords": "Kuliner Lifestyle",
+    "description": "Food tech mengubah cara akses makanan melalui teknologi. Dari marketplace hingga subscription, akses makanan semakin mudah. Food tech mengubah cara akses makanan melalui teknologi. Dalam penerapannya, hal ini meliputi aplikasi pesan-makanan, platform subscription makanan sehat, toko bahan makanan online terstruktur. Food tech memudahkan akses makanan setiap hari.\n\nGaya hidup makanan yang sedang naik daun saat ini adalah cerminan dari kebutuhan akan keseimbangan antara hiburan, kesehatan, dan kes",
+    "mainEntityOfPage": "kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/food-tech/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 6.77">
+    <link rel="alternate" type="application/rss+xml" title="Kuliner Lifestyle: Tren Terbaru &amp; Cara Menikmati Gaya Hidup" href="../rss/index.html.rss">
+    <script defer src="https://cdn.jsdelivr.net/ghost/portal@~2.72/umd/portal.min.js" data-i18n="true" data-ghost="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/" data-key="960abdfd906492a79b1d9f9848" data-api="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/ghost/api/content/" data-locale="id" crossorigin="anonymous"></script><style id="gh-members-styles">.gh-post-upgrade-cta-content,
+.gh-post-upgrade-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.gh-post-upgrade-cta-content {
+    border-radius: 8px;
+    padding: 40px 4vw;
+}
+
+.gh-post-upgrade-cta h2 {
+    color: #ffffff;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+    margin: 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta p {
+    margin: 20px 0 0;
+    padding: 0;
+}
+
+.gh-post-upgrade-cta small {
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+
+.gh-post-upgrade-cta a {
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a:hover {
+    color: #ffffff;
+    opacity: 0.8;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.gh-post-upgrade-cta a.gh-btn {
+    display: block;
+    background: #ffffff;
+    text-decoration: none;
+    margin: 28px 0 0;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.gh-post-upgrade-cta a.gh-btn:hover {
+    opacity: 0.92;
+}</style>
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/sodo-search.min.js" data-key="960abdfd906492a79b1d9f9848" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/main.css" data-sodo-search="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/" data-locale="id" crossorigin="anonymous"></script>
+    
+    <link href="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/webmentions/receive/" rel="webmention">
+    <script defer src="../public/cards.min.js%3Fv=mLGdiz8Ij-Hk3ydN"></script>
+    <link rel="stylesheet" type="text/css" href="../public/cards.min.css%3Fv=WwnU9jw5ancNC8Gc.css">
+    <script defer src="../public/comment-counts.min.js%3Fv=oFYkaGLdiMqB8VN9" data-ghost-comments-counts-api="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/members/api/comments/counts/"></script>
+    <script defer src="../public/member-attribution.min.js%3Fv=AKG4hWena9j3yX3I"></script><style>:root {--ghost-accent-color:#ffffff;}</style>
+
+</head>
+<body class="post-template tag-kuliner-lifestyle has-sans-title has-sans-body">
+
+<div class="gh-viewport">
+    
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+    <div class="gh-navigation-inner gh-inner">
+
+        <div class="gh-navigation-brand">
+            <a class="gh-navigation-logo is-title" href="../index.html">
+                    <img src="../content/images/2026/11/logo-500x500-1.png" alt="Kuliner Lifestyle: Tren Terbaru &amp; Cara Menikmati Gaya Hidup">
+            </a>
+            <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>            <button class="gh-burger gh-icon-button" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>            </button>
+        </div>
+
+        <nav class="gh-navigation-menu">
+            <ul class="nav">
+    <li class="nav-beranda"><a href="../index.html">Beranda</a></li>
+</ul>
+
+        </nav>
+
+        <div class="gh-navigation-actions">
+                <button class="gh-search gh-icon-button" aria-label="Search this site" data-ghost-search>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button>                <div class="gh-navigation-members">
+                            <a href="#/portal/signin" data-portal="signin">Sign in</a>
+                                <a class="gh-button" href="#/portal/signup" data-portal="signup">Subscribe</a>
+                </div>
+        </div>
+
+    </div>
+</header>
+
+    
+
+<main class="gh-main">
+
+    <article class="gh-article post tag-kuliner-lifestyle">
+
+        <header class="gh-article-header gh-canvas">
+
+                <a class="gh-article-tag" href="../tag/kuliner-lifestyle/index.html">Kuliner Lifestyle</a>
+            <h1 class="gh-article-title is-title">Food Tech: Teknologi yang Mengubah Akses Makanan</h1>
+
+                <div class="gh-meta-share">
+                    <div class="gh-article-meta">
+                        <div class="gh-article-author-image instapaper_ignore">
+                                    <a href="../author/kojo/index.html">
+                                        <img class="author-profile-image" src="../content/images/size/w160/2026/11/logo-500x500-2.png" alt="Kojo Onigiri">
+                                    </a>
+                        </div>
+                        <div class="gh-article-meta-wrapper">
+                            <h4 class="gh-article-author-name"><a href="../author/kojo/index.html">Kojo Onigiri</a></h4>
+                            <div class="gh-article-meta-content">
+                                <time class="gh-article-meta-date" datetime="2026-11-16">16 Nov 2026</time>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#/share" class="gh-button gh-button-share">
+                        Share
+                    </a>
+                </div>
+
+                <figure class="gh-article-image">
+        <img
+            class="gh-feature-image"
+            srcset="https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80 320w,
+                    https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80 600w,
+                    https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80 960w,
+                    https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80 1200w,
+                    https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80 2000w"
+            sizes="(max-width: 1200px) 100vw, 1120px"
+            src="https://plus.unsplash.com/premium_photo-1740928991594-66ade8525afe?auto=format&fit=crop&w=1200&q=80"
+            alt="Food Tech: Teknologi yang Mengubah Akses Makanan"
+        >
+    </figure>
+
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            <p>Food tech mengubah cara akses makanan melalui teknologi. Dari marketplace hingga subscription, akses makanan semakin mudah. Food tech mengubah cara akses makanan melalui teknologi. Dalam penerapannya, hal ini meliputi aplikasi pesan-makanan, platform subscription makanan sehat, toko bahan makanan online terstruktur. Food tech memudahkan akses makanan setiap hari.
+
+Gaya hidup makanan yang sedang naik daun saat ini adalah cerminan dari kebutuhan akan keseimbangan antara hiburan, kesehatan, dan kesadaran lingkungan.</p>
+        </section>
+
+    </article>
+
+        <div class="gh-comments gh-canvas">
+            
+        <script defer src="https://cdn.jsdelivr.net/ghost/comments-ui@~1.6/umd/comments-ui.min.js" data-locale="id" data-ghost-comments="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/" data-api="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/ghost/api/content/" data-admin="kojoonigiri.github.io/https://github.com/kojoonigiri/kojoonigiri.github.io.git/ghost/" data-key="960abdfd906492a79b1d9f9848" data-title="null" data-count="true" data-post-id="6afa81b3f632d77fd6151ccd" data-color-scheme="auto" data-avatar-saturation="60" data-accent-color="#ffffff" data-comments-enabled="all" data-publication="Kuliner Lifestyle: Tren Terbaru & Cara Menikmati Gaya Hidup" crossorigin="anonymous"></script>
+    
+        </div>
+
+</main>
+
+
+            <section class="gh-container is-grid gh-outer">
+                <div class="gh-container-inner gh-inner">
+                    <h2 class="gh-container-title">Read more</h2>
+                    <div class="gh-feed">
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../kantin-sekolah-bandung-laboratorium-kuliner/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=160 160w,
+                            https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=320 320w,
+                            https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=600 600w,
+                            https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=960 960w,
+                            https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=1200 1200w,
+                            https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=webp&q=80&auto=format&fit=crop&w=2000 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="https://images.unsplash.com/photo-1677921755291-c39158477b8e?fm=jpg&q=80&auto=format&fit=crop&w=600"
+                    alt="Kantin Sekolah Bandung: Laboratorium Kuliner yang Menentukan Identitas Kota"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Kantin Sekolah Bandung: Laboratorium Kuliner yang Menentukan Identitas Kota</h3>
+                    <p class="gh-card-excerpt is-body">Kantin sekolah di Bandung menempati posisi yang jarang dibahas. Ia bukan sekadar tempat membeli makanan, melainkan ruang pertama tempat anak berhadapan dengan pilihan rasa, harga, dan kebiasaan makan. Di kota yang identik dengan kuliner ini, kantin menjadi laboratorium kecil tempat selera dibentuk jauh sebelum seseorang mengenal resto.
+
+
+Kantin sebagai Laboratorium</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Kojo Onigiri</span>
+                    <time class="gh-card-date" datetime="2026-11-16">16 Nov 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../gaya-hidup-kuliner/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=160 160w,
+                            https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=320 320w,
+                            https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=600 600w,
+                            https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=960 960w,
+                            https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=1200 1200w,
+                            https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&fm=webp&w=2000 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="https://images.unsplash.com/photo-1753727471014-efe38840c7c7?auto=format&fit=crop&q=80&w=600"
+                    alt="Gaya Hidup Kuliner: Lebih dari Sekedar Makan"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Gaya Hidup Kuliner: Lebih dari Sekedar Makan</h3>
+                    <p class="gh-card-excerpt is-body">Gaya Hidup Kuliner: Lebih dari Sekedar Makan adalah sebuah eksplorasi tentang bagaimana gaya hidup kuliner kini menjelma lebih dari sekadar mencinstance makanan. Tematik ini mengajak pembaca untuk menikmati sarapan, menu specialty coffee, hingga kuliner tradisional yang mulai punah dengan cara yang modern dan berkelanjutan. Setiap porsi mencerminkan cerita budaya, koneksi</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Kojo Onigiri</span>
+                    <time class="gh-card-date" datetime="2026-11-16">16 Nov 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../clean-eating/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=160 160w,
+                            https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=320 320w,
+                            https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=600 600w,
+                            https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=960 960w,
+                            https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=1200 1200w,
+                            https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&fm=webp&w=2000 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="https://images.unsplash.com/photo-1748444432939-f5e117280ab0?auto=format&fit=crop&q=80&w=600"
+                    alt="Clean Eating: Pola Makan yang Sadar dan Alami"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Clean Eating: Pola Makan yang Sadar dan Alami</h3>
+                    <p class="gh-card-excerpt is-body">Clean eating adalah pola makan yang menekankan makanan utuh (whole foods) yang kaya nutrisi dan bebas dari pengolahan berlebihan. Clean eating bukan diet membatasi, melainkan kesadaran memilih bahan yang lebih alami. Dalam penerapannya, hal ini meliputi sayuran dan buah-buahan segar, protein nabati (tempe, tahu, kacang-kacangan), serta penghindaran gula</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Kojo Onigiri</span>
+                    <time class="gh-card-date" datetime="2026-11-16">16 Nov 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                            <article class="gh-card post">
+    <a class="gh-card-link" href="../local-food/index.html">
+            <figure class="gh-card-image">
+                <img
+                    srcset="https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=160 160w,
+                            https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=320 320w,
+                            https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=600 600w,
+                            https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=960 960w,
+                            https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=1200 1200w,
+                            https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&fm=webp&w=2000 2000w"
+                    sizes="auto, (max-width: 1199px) 100vw, 980px"
+                    src="https://images.unsplash.com/photo-1759663783558-fa350d7a6734?auto=format&fit=crop&q=80&w=600"
+                    alt="Local Food: Makanan Lokal yang Kaya Warisan Budaya"
+                    loading="lazy"
+                >
+            </figure>
+        <div class="gh-card-wrapper">
+            <h3 class="gh-card-title is-title">Local Food: Makanan Lokal yang Kaya Warisan Budaya</h3>
+                    <p class="gh-card-excerpt is-body">Local food adalah gerakan makan yang menekankan pada makanan hasil lokal. Dengan memilih lokal, kita mendukung petani, UMKM, dan warisan kuliner daerah. Makanan lokal semakin populer karena kesadaran akan asal-usul bahan dan budaya kuliner. Dalam penerapannya, hal ini meliputi mendukung petani dan UMKM setempat, menghargai warisan kuliner lokal, serta</p>
+            <footer class="gh-card-meta">
+<!--
+             -->
+                    <span class="gh-card-author">By Kojo Onigiri</span>
+                    <time class="gh-card-date" datetime="2026-11-16">16 Nov 2026</time>
+                <!--
+         --></footer>
+        </div>
+    </a>
+</article>
+                    </div>
+                </div>
+            </section>
+
+    
+    <footer class="gh-footer gh-outer">
+    <div class="gh-footer-inner gh-inner">
+
+                <section class="gh-footer-signup">
+                    <h2 class="gh-footer-signup-header is-title">
+                        Kuliner Lifestyle: Tren Terbaru &amp; Cara Menikmati Gaya Hidup
+                    </h2>
+                    <p class="gh-footer-signup-subhead is-body">
+                        Update terus tren kuliner lifestyle terbaru. Simak inspirasi dan cara seru menikmati gaya hidup kekinian yang estetik dan bermakna bersama kami.
+                    </p>
+                    <form class="gh-form" data-members-form>
+    <input class="gh-form-input" id="footer-email" name="email" type="email" placeholder="jamie@example.com" required data-members-email>
+    <button class="gh-button" type="submit" aria-label="Subscribe">
+        <span><span>Subscribe</span> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg></span>
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+    <g stroke-linecap="round" stroke-width="2" fill="currentColor" stroke="none" stroke-linejoin="round" class="nc-icon-wrapper">
+        <g class="nc-loop-dots-4-24-icon-o">
+            <circle cx="4" cy="12" r="3"></circle>
+            <circle cx="12" cy="12" r="3"></circle>
+            <circle cx="20" cy="12" r="3"></circle>
+        </g>
+        <style data-cap="butt">
+            .nc-loop-dots-4-24-icon-o{--animation-duration:0.8s}
+            .nc-loop-dots-4-24-icon-o *{opacity:.4;transform:scale(.75);animation:nc-loop-dots-4-anim var(--animation-duration) infinite}
+            .nc-loop-dots-4-24-icon-o :nth-child(1){transform-origin:4px 12px;animation-delay:-.3s;animation-delay:calc(var(--animation-duration)/-2.666)}
+            .nc-loop-dots-4-24-icon-o :nth-child(2){transform-origin:12px 12px;animation-delay:-.15s;animation-delay:calc(var(--animation-duration)/-5.333)}
+            .nc-loop-dots-4-24-icon-o :nth-child(3){transform-origin:20px 12px}
+            @keyframes nc-loop-dots-4-anim{0%,100%{opacity:.4;transform:scale(.75)}50%{opacity:1;transform:scale(1)}}
+        </style>
+    </g>
+</svg>        <span>Email sent</span>
+    </button>
+    <p data-members-error></p>
+</form>
+                </section>
+
+        <div class="gh-social-links">
+                <a href="https://www.facebook.com/kojo.onigiri" target="_blank" rel="noopener" aria-label="Facebook">
+<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z"/></svg>                </a>
+                <a href="https://www.tiktok.com/@kojoyummyfood" target="_blank" rel="noopener" aria-label="TikTok">
+<svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10.1891 8.937V13.059C9.66997 12.9221 9.12673 12.9034 8.59942 13.0044C8.07212 13.1054 7.57419 13.3234 7.14234 13.6424C6.7105 13.9613 6.35575 14.3732 6.10423 14.8475C5.85272 15.3218 5.71085 15.8466 5.6891 16.383C5.65937 16.8449 5.72887 17.3078 5.89293 17.7405C6.057 18.1733 6.31182 18.5659 6.64027 18.892C6.96872 19.2181 7.36318 19.4701 7.79713 19.631C8.23108 19.7919 8.69446 19.8581 9.1561 19.825C9.62242 19.8608 10.0909 19.7949 10.5293 19.6319C10.9677 19.4689 11.3654 19.2126 11.6951 18.8809C12.0247 18.5491 12.2784 18.1498 12.4387 17.7104C12.5989 17.271 12.6618 16.8021 12.6231 16.336V0H16.7001C17.3931 4.315 19.5511 5.316 22.4401 5.778V9.913C20.438 9.74881 18.5067 9.09645 16.8151 8.013V16.18C16.8151 19.88 14.6251 24 9.1881 24C8.16806 23.9955 7.15918 23.7875 6.22058 23.3881C5.28199 22.9886 4.43258 22.4059 3.72213 21.6739C3.01168 20.942 2.4545 20.0755 2.08325 19.1254C1.712 18.1754 1.53414 17.1607 1.5601 16.141C1.59241 15.0794 1.84936 14.0366 2.31401 13.0815C2.77866 12.1265 3.44047 11.2807 4.2558 10.6C5.07114 9.9193 6.02148 9.41915 7.0442 9.1325C8.06691 8.84586 9.13876 8.77923 10.1891 8.937Z" fill="currentColor"/>
+</svg>                </a>
+                <a href="https://www.instagram.com/kojo_onigiri" target="_blank" rel="noopener" aria-label="Instagram">
+<svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2.982C14.937 2.982 15.285 2.993 16.445 3.046C17.1424 3.05412 17.8331 3.18233 18.487 3.425C18.965 3.60111 19.3973 3.88237 19.752 4.248C20.1176 4.60269 20.3989 5.035 20.575 5.513C20.8177 6.16685 20.9459 6.85762 20.954 7.555C21.007 8.715 21.018 9.063 21.018 12C21.018 14.937 21.007 15.285 20.954 16.445C20.9459 17.1424 20.8177 17.8331 20.575 18.487C20.3919 18.9615 20.1116 19.3924 19.752 19.752C19.3924 20.1116 18.9615 20.3919 18.487 20.575C17.8331 20.8177 17.1424 20.9459 16.445 20.954C15.285 21.007 14.937 21.018 12 21.018C9.063 21.018 8.715 21.007 7.555 20.954C6.85762 20.9459 6.16685 20.8177 5.513 20.575C5.035 20.3989 4.60269 20.1176 4.248 19.752C3.88237 19.3973 3.60111 18.965 3.425 18.487C3.18233 17.8331 3.05412 17.1424 3.046 16.445C2.993 15.285 2.982 14.937 2.982 12C2.982 9.063 2.993 8.715 3.046 7.555C3.05412 6.85762 3.18233 6.16685 3.425 5.513C3.60111 5.035 3.88237 4.60269 4.248 4.248C4.60269 3.88237 5.035 3.60111 5.513 3.425C6.16685 3.18233 6.85762 3.05412 7.555 3.046C8.715 2.993 9.063 2.982 12 2.982ZM12 1C9.013 1 8.638 1.013 7.465 1.066C6.55258 1.08486 5.6499 1.25762 4.795 1.577C4.06355 1.86017 3.3994 2.29319 2.84521 2.84824C2.29102 3.40329 1.85904 4.06811 1.577 4.8C1.25762 5.6549 1.08486 6.55758 1.066 7.47C1.013 8.638 1 9.013 1 12C1 14.987 1.013 15.362 1.066 16.535C1.08486 17.4474 1.25762 18.3501 1.577 19.205C1.86017 19.9365 2.29319 20.6006 2.84824 21.1548C3.40329 21.709 4.06811 22.141 4.8 22.423C5.6549 22.7424 6.55758 22.9151 7.47 22.934C8.638 22.987 9.013 23 12 23C14.987 23 15.362 22.987 16.535 22.934C17.4474 22.9151 18.3501 22.7424 19.205 22.423C19.9365 22.1398 20.6006 21.7068 21.1548 21.1518C21.709 20.5967 22.141 19.9319 22.423 19.2C22.7424 18.3451 22.9151 17.4424 22.934 16.53C22.987 15.362 23 14.987 23 12C23 9.013 22.987 8.638 22.934 7.465C22.9151 6.55258 22.7424 5.6499 22.423 4.795C22.1398 4.06355 21.7068 3.3994 21.1518 2.84521C20.5967 2.29102 19.9319 1.85904 19.2 1.577C18.3451 1.25762 17.4424 1.08486 16.53 1.066C15.362 1.013 14.987 1 12 1Z" fill="currentColor"/>
+    <path d="M11.9996 6.35107C10.8823 6.35107 9.79015 6.68238 8.86117 7.3031C7.9322 7.92382 7.20815 8.80608 6.78059 9.8383C6.35303 10.8705 6.24116 12.0063 6.45913 13.1021C6.6771 14.1979 7.21512 15.2045 8.00514 15.9945C8.79517 16.7845 9.80172 17.3226 10.8975 17.5405C11.9933 17.7585 13.1291 17.6466 14.1614 17.2191C15.1936 16.7915 16.0758 16.0675 16.6966 15.1385C17.3173 14.2095 17.6486 13.1173 17.6486 12.0001C17.6486 10.5019 17.0534 9.06502 15.994 8.00563C14.9346 6.94624 13.4978 6.35107 11.9996 6.35107ZM11.9996 15.6671C11.2743 15.6671 10.5653 15.452 9.96231 15.0491C9.35928 14.6461 8.88927 14.0734 8.61172 13.4034C8.33418 12.7333 8.26156 11.996 8.40305 11.2847C8.54454 10.5734 8.89379 9.91995 9.40663 9.40711C9.91947 8.89427 10.5729 8.54503 11.2842 8.40353C11.9955 8.26204 12.7328 8.33466 13.4029 8.61221C14.0729 8.88975 14.6457 9.35976 15.0486 9.9628C15.4515 10.5658 15.6666 11.2748 15.6666 12.0001C15.6666 12.9726 15.2802 13.9053 14.5925 14.593C13.9049 15.2807 12.9721 15.6671 11.9996 15.6671Z" fill="currentColor"/>
+    <path d="M17.8718 7.44811C18.6008 7.44811 19.1918 6.85712 19.1918 6.12811C19.1918 5.39909 18.6008 4.80811 17.8718 4.80811C17.1427 4.80811 16.5518 5.39909 16.5518 6.12811C16.5518 6.85712 17.1427 7.44811 17.8718 7.44811Z" fill="currentColor"/>
+</svg>
+                </a>
+        </div>
+
+        <div class="gh-footer-bar">
+            <span class="gh-footer-logo is-title">
+                    <img src="../content/images/2026/11/logo-500x500-1.png" alt="Kuliner Lifestyle: Tren Terbaru &amp; Cara Menikmati Gaya Hidup">
+            </span>
+            <nav class="gh-footer-menu">
+                <ul class="nav">
+    <li class="nav-sign-up"><a href="#/portal/">Sign up</a></li>
+</ul>
+
+            </nav>
+            <div class="gh-footer-copyright">
+                Powered by <a href="../index.html" target="_blank" rel="noopener">Ghost</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    
+</div>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/built/source.js%3Fv=33sa4-qy5thAFPQH"></script>
+
+
+
+</body>
+</html>

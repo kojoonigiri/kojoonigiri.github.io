@@ -1,0 +1,215 @@
+{
+  "base_url": "http://127.0.0.1:2373",
+  "scraped_at": "2026-11-17T00:00:00+07:00",
+  "total_assets_found": 18,
+  "assets_to_download": 7,
+  "assets_downloaded": 7,
+  "external_assets": 11,
+  "html_bytes": 28300,
+  "assets": {
+    "found": [
+      {
+        "tag": "img",
+        "url": "http://127.0.0.1:2373/content/images/2026/11/logo-500x500.png",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "img",
+        "url": "https://images.unsplash.com/photo-1737644467636-6b0053476bb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDExfHx0ZWNoJTIwYWl8ZW58MHx8fHwxNzk0ODgxNTUxfDA&ixlib=rb-4.1.0&q=80&w=600",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "img",
+        "url": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=600",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "img",
+        "url": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=600",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "img",
+        "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "/assets/built/screen.css?v=xPGozQS2SFMZDlmQ",
+        "rel": "preload",
+        "media": "",
+        "as": "style",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "/assets/built/source.js?v=33sa4-qy5thAFPQH",
+        "rel": "preload",
+        "media": "",
+        "as": "script",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "/assets/fonts/inter-roman.woff2?v=OecsB5TBLy27FKD2",
+        "rel": "preload",
+        "media": "",
+        "as": "font",
+        "crossorigin": "anonymous"
+      },
+      {
+        "tag": "link",
+        "url": "http://127.0.0.1:2373/content/images/size/w256h256/2026/11/logo.png",
+        "rel": "icon",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "http://127.0.0.1:2373/",
+        "rel": "canonical",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "http://127.0.0.1:2373/rss/",
+        "rel": "alternate",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "http://127.0.0.1:2373/webmentions/receive/",
+        "rel": "webmention",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "link",
+        "url": "/public/cards.min.css?v=WwnU9jw5ancNC8Gc",
+        "rel": "stylesheet",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "script",
+        "url": "https://cdn.jsdelivr.net/ghost/portal@~2.72/umd/portal.min.js",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": "anonymous"
+      },
+      {
+        "tag": "script",
+        "url": "https://cdn.jsdelivr.net/ghost/sodo-search@~1.9/umd/sodo-search.min.js",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": "anonymous"
+      },
+      {
+        "tag": "script",
+        "url": "/public/cards.min.js?v=mLGdiz8Ij-Hk3ydN",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "script",
+        "url": "/public/comment-counts.min.js?v=oFYkaGLdiMqB8VN9",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      },
+      {
+        "tag": "script",
+        "url": "/public/member-attribution.min.js?v=AKG4hWena9j3yX3I",
+        "rel": "",
+        "media": "",
+        "as": "",
+        "crossorigin": ""
+      }
+    ],
+    "download_results": [
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/assets/built/screen.css?v=xPGozQS2SFMZDlmQ",
+        "absolute": "http://127.0.0.1:2373/assets/built/screen.css?v=xPGozQS2SFMZDlmQ",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/screen.css",
+        "size": 55598,
+        "content_type": "text/css; charset=UTF-8"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/assets/built/source.js?v=33sa4-qy5thAFPQH",
+        "absolute": "http://127.0.0.1:2373/assets/built/source.js?v=33sa4-qy5thAFPQH",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/source.js",
+        "size": 52915,
+        "content_type": "application/javascript; charset=UTF-8"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/assets/fonts/inter-roman.woff2?v=OecsB5TBLy27FKD2",
+        "absolute": "http://127.0.0.1:2373/assets/fonts/inter-roman.woff2?v=OecsB5TBLy27FKD2",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/inter-roman.woff2",
+        "size": 37780,
+        "content_type": "font/woff2"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/public/cards.min.css?v=WwnU9jw5ancNC8Gc",
+        "absolute": "http://127.0.0.1:2373/public/cards.min.css?v=WwnU9jw5ancNC8Gc",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/cards.min.css",
+        "size": 46231,
+        "content_type": "text/css"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/public/cards.min.js?v=mLGdiz8Ij-Hk3ydN",
+        "absolute": "http://127.0.0.1:2373/public/cards.min.js?v=mLGdiz8Ij-Hk3ydN",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/cards.min.js",
+        "size": 7044,
+        "content_type": "application/javascript"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/public/comment-counts.min.js?v=oFYkaGLdiMqB8VN9",
+        "absolute": "http://127.0.0.1:2373/public/comment-counts.min.js?v=oFYkaGLdiMqB8VN9",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/comment-counts.min.js",
+        "size": 1519,
+        "content_type": "application/javascript"
+      },
+      {
+        "status": "ok",
+        "original": "http://127.0.0.1:2373/public/member-attribution.min.js?v=AKG4hWena9j3yX3I",
+        "absolute": "http://127.0.0.1:2373/public/member-attribution.min.js?v=AKG4hWena9j3yX3I",
+        "saved_to": "/home/adsmosfer/Documents/Data Elevia/1. FBM/scrape_result/assets/member-attribution.min.js",
+        "size": 3025,
+        "content_type": "application/javascript"
+      }
+    ]
+  }
+}
