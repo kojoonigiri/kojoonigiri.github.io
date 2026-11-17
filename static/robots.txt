@@ -1,0 +1,8 @@
+User-agent: *
+Sitemap: http://127.0.0.1:2373/sitemap.xml
+Disallow: /ghost/
+Disallow: /email/
+Disallow: /members/api/comments/counts/
+Disallow: /r/
+Disallow: /webmentions/receive/
+Disallow: /.ghost/analytics/api/
