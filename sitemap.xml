@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Halaman utama -->
+  <url>
+    <loc>https://kojoonigiri.biz.id/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Blog -->
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Artikel Blog -->
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-20-rekomendasi-tempat-makan-populer-di-bandung</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-20-liburan-ke-bandung</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-ide-bisnis-kuliner-bandung</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-panduan-lengkap-wisata-kuliner-dan-tempat-main-di-bandung-2026</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-pesona-tempat-wisata-bandung-terbaru-2026-destinasi-liburan-terbaik</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-rekomendasi-kuliner-jepang-bandung</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-rekomendasi-tempat-jajan-dan-tempat-main-hits-di-bandung-2026</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://kojoonigiri.biz.id/blogs/2026-11-19-wisata-kuliner-dan-jajanan-bandung-2026-surga-rasa-yang-tak-pernah-padam</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
